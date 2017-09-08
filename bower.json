@@ -1,0 +1,12 @@
+{
+  "name": "teleki",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Gabor Szabo <szabogabor@hydrogene.hu>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "^6.4.3"
+  }
+}

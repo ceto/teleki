@@ -1,0 +1,16 @@
+@charset 'utf-8';
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
+// endbower
+
+@import 'settings';
+@import 'fonts';
+
+@include foundation-everything(true, false);
+
+@import 'base';
+@import "components/components";
+@import "layouts/layouts";
+@import "pages/pages";
+
