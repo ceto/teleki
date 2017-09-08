@@ -18,3 +18,7 @@
 
   // 4. Include ACF
   include_once( get_stylesheet_directory() . '/lib/acf/acf.php' );
+
+  // Adding excerpt box to pages
+  add_post_type_support( 'page', 'excerpt' );
+
