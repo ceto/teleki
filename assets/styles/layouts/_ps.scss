@@ -1,0 +1,98 @@
+.ps {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+
+.ps--narrow {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  @include breakpoint(large) {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
+
+
+.ps--notop {
+  padding-top: 0;
+  @include breakpoint(large) {
+    padding-top: 0;
+  }
+}
+
+.ps--nobottom {
+  padding-bottom: 0;
+  @include breakpoint(large) {
+    padding-bottom: 0;
+  }
+}
+
+
+.ps--largetop {
+  padding-top: 8rem;
+  @include breakpoint(large) {
+    padding-top: calc(8rem + 2vw);
+  }
+}
+.ps--largebottom {
+  padding-bottom: 8rem;
+  @include breakpoint(large) {
+    padding-bottom: calc(8rem + 2vw);
+  }
+}
+.ps--notop {
+  padding-top: 0;
+}
+.ps--nobottom {
+  padding-bottom: 0;
+}
+
+.ps--bordered {
+  border-top:1px solid transparent;
+  border-bottom:1px solid transparent;
+  border-color: $light-gray;
+}
+
+.ps--opaque {
+  background-color: $white;
+}
+.ps--dark {
+  background-color: $dark-gray;
+  color:$body-background;
+}
+
+.ps--light {
+  background-color: $light-gray;
+  border-color: scale-color($light-gray, $lightness:-5%);
+}
+
+
+.ps--accent {
+  background-color: $warning-color;
+  //color:$body-font-color;
+}
+
+.ps--black {
+  background-color: #000;
+  color: $white;
+}
+.ps--pricol {
+  background-color: $primary-color;
+  color: $white;
+}
+.ps--seccol {
+  background-color: $secondary-color;
+  color: $white;
+}
+.ps--alertcol {
+  background-color: $alert-color;
+  color: $white;
+}
+.ps--successcol {
+  background-color: $success-color;
+  color: $white;
+}
