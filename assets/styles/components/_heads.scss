@@ -1,0 +1,95 @@
+.pagehead {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    @include breakpoint(large) {
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+    }
+}
+
+.kepzeshead {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
+    color: $white;
+    background-color: $primary-color;
+    background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+
+    @include breakpoint(large) {
+        padding-top: 8vh;
+        padding-bottom: 5vh;
+    }
+}
+
+.kepzeshead__title {
+    //font-weight: $global-weight-normal;
+    margin: 0;
+}
+.kepzeshead__kivonat {
+    font-size: 1.125rem;
+    font-weight: $global-weight-bold;
+
+    margin: 0 0 1rem;
+
+    color: $warning-color;
+    //font-family: $header-font-family;
+}
+.kepzeshead__okjnum {
+    font-family: $header-font-family;
+    font-size: 1.5rem;
+    font-weight: $global-weight-bold;
+    line-height: 1;
+
+    margin: .75em 0 0;
+
+    //text-align: right;
+
+    color: $alert-color;
+    small {
+        color:$white;
+        font-size: .75em;
+    }
+}
+.kepzeshead__lead {
+    font-weight: $global-weight-bold;
+    margin: 0 0 0;
+    max-width: 60em;
+    p {
+        margin: 0;
+    }
+}
+
+.posthead {
+    padding-top: 3rem;
+    @include breakpoint(large) {
+        padding-top: 8vh;
+    }
+}
+.posthead__meta {
+
+}
+
+.posthead__content {
+    margin:0 0 2rem;
+    &:after {
+        display: block;
+        content: '';
+        width:100%;
+        height:auto;
+        border-bottom: .5rem dotted $alert-color;
+        margin:2rem 0 0;
+    }
+}
+.posthead__title {
+    color:$primary-color;
+    //font-weight: $global-weight-normal;
+}
+.posthead__lead {
+    font-size: 1.25rem;
+    line-height: $lead-lineheight;
+    font-weight: $global-weight-bold;
+    > p {
+        margin:0;
+    }
+}

@@ -1,0 +1,17 @@
+.lead {
+    //font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+}
+
+a.readmore {
+    text-transform: uppercase;
+    font-weight: $global-weight-bold;
+    font-size: .666em;
+    &:before {
+        content: '\00bb';
+        margin-right: .25em;
+    }
+    &:hover, &:focus {
+        color:$alert-color;
+    }
+}

@@ -1,0 +1,49 @@
+.menu {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+}
+
+.menu--side {
+    > li {
+        &:not(:last-child) {
+            margin-bottom: .25rem;
+        }
+    }
+
+    a {
+        position: relative;
+        font-size: 1.125rem;
+        //text-transform: uppercase;
+        padding: .5em 0;
+        line-height: $header-lineheight;
+        color:inherit;
+        &:hover, &:focus {
+            color:$primary-color;
+            // &:before {
+            //     border-color: currentColor;
+            // }
+        }
+        &:before {
+            position: absolute;
+            left:-2rem;
+            top:.5em;
+            bottom:.75em;
+            content:'';
+            display: block;
+            width:15px;
+            height: auto;
+            border-right: 5px dotted transparent;
+            border-left: 5px dotted transparent;
+        }
+    }
+
+    .is-active {
+        > a {
+            background-color: transparent;
+            color: inherit;
+            &:before {
+                border-color: $alert-color;
+            }
+        }
+    }
+}

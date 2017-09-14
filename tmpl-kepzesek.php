@@ -28,12 +28,7 @@
                 <?php while ($the_kepzesek->have_posts() ) : $the_kepzesek->the_post(); ?>
                 <?php setup_postdata( $post ); ?>
                 <div class="cell">
-                    <div class="kepzescard">
-                        <h3 clas="kepzescard__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <h5 class="kepzescard__sub">Kétéves emelt szintű nappali képzés</h5>
-                        <?php the_excerpt(); ?>
-                        <a class="button small" href="<?php the_permalink(); ?>">Részletek</a>
-                    </div>
+                    <?php get_template_part('templates/kepzescard' ); ?>
                 </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
@@ -42,7 +37,10 @@
     </div>
     <div class="grid-x grid-margin-x">
         <div class="large-8 cell">
-            <?php the_content(); ?>
+            <div class="ps">
+                            <?php the_content(); ?>
+            </div>
+
         </div>
     </div>
 </div>

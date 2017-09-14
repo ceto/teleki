@@ -1,0 +1,39 @@
+.prettydate {
+    font-family: $header-font-family;
+    font-size: .75rem;
+    font-weight: $global-weight-bold;
+    line-height: 1;
+
+    display: block;
+
+    margin: .75rem auto .5em;
+
+    color: $alert-color;
+
+
+    @include breakpoint(large) {
+        font-size: 1rem;
+
+        text-align: center;
+        &__dayofweek {
+            display: block;
+
+            margin: .25em 0 0;
+        }
+    }
+    &__year {
+        font-size: 1.125em;
+    }
+    &__month {
+        font-size: 1.125em;
+        //display: block;
+    }
+    &__day {
+        font-size: 1.125em;
+        //display: block;
+        //font-size: 2em;
+    }
+    &__dayofweek {
+        font-size: 1.125em;
+    }
+}

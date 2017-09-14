@@ -1,0 +1,41 @@
+.kepzescard {
+    &:before {
+        display: block;
+        content: '';
+        width:16.666%;
+        height:0;
+        border-bottom: .5rem dotted $alert-color;
+        margin:0 0 1rem;
+    }
+}
+.kepzescard__title {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin:0 0 .125em;
+    @include breakpoint(large) {
+         font-size: 1.5rem;
+    }
+
+    a {
+        color:inherit;
+
+        &:hover, &:focus {
+            color:$alert-color;
+        }
+    }
+}
+
+.kepzescard__kivonat {
+    font-size: .875rem;
+    font-weight: $global-weight-bold;
+    color:$primary-color;
+    //line-height: $header-lineheight;
+    margin:0 0 0;
+}
+.kepzescard__body {
+    font-size: .875rem;
+    margin:.5em 0 .5em 0;
+    p {
+        margin:0;
+    }
+}
