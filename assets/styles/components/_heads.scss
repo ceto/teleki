@@ -17,8 +17,8 @@
     background-image: linear-gradient(60deg, $primary-color, $secondary-color);
 
     @include breakpoint(large) {
-        padding-top: 8vh;
-        padding-bottom: 5vh;
+        padding-top: 12vh;
+        padding-bottom: 4vh;
     }
 }
 
@@ -54,7 +54,7 @@
 .kepzeshead__lead {
     font-weight: $global-weight-bold;
     margin: 0 0 0;
-    max-width: 60em;
+    max-width: 64em;
     p {
         margin: 0;
     }
@@ -67,21 +67,21 @@
     }
 }
 .posthead__meta {
-
+    font-size: 1rem;
+    font-weight: $global-weight-bold;
+    margin:0 0 1rem;
+    font-family: $header-font-family;
+    time {
+        color:$alert-color;
+    }
 }
 
 .posthead__content {
     margin:0 0 2rem;
-    &:after {
-        display: block;
-        content: '';
-        width:100%;
-        height:auto;
-        border-bottom: .5rem dotted $alert-color;
-        margin:2rem 0 0;
-    }
+
 }
 .posthead__title {
+    margin:0;
     color:$primary-color;
     //font-weight: $global-weight-normal;
 }
@@ -92,4 +92,13 @@
     > p {
         margin:0;
     }
+
+    // &:before {
+    //     display: block;
+    //     content: '';
+    //     width:100%;
+    //     height:auto;
+    //     border-bottom: .333rem dotted $primary-color;
+    //     margin:1rem 0 .75rem;
+    // }
 }

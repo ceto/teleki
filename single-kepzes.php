@@ -2,13 +2,13 @@
 <article <?php post_class(); ?>>
     <header class="kepzeshead ">
         <div class="grid-container">
-            <div class="grid-x grid-margin-x">
-                <div class="large-12 cell">
+            <div class="grid-x grid-margin-x align-right">
+                <div class="large-9 cell">
                     <h1 class="kepzeshead__title"><?php the_title(); ?></h1>
                     <p class="kepzeshead__kivonat"><?= get_field('kivonat') ?></p>
 
-                    <div class="kepzeshead__lead"><?php the_excerpt(); ?></div>
-                                        <?php if ($okjnum=get_field('okjszam')) :  ?>
+                    <!-- <div class="kepzeshead__lead"><?php the_excerpt(); ?></div> -->
+                    <?php if ($okjnum=get_field('okjszam')) :  ?>
                     <p class="kepzeshead__okjnum"><small>OKJ szám:</small> <?= $okjnum ?></p>
                     <?php endif; ?>
                 </div>
@@ -18,13 +18,16 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-9 cell large-order-2">
-                <div class="entry-content ps ps--narrow">
+                <div class="ps ps--narrow">
+                <div class="lead"><?php the_excerpt(); ?></div>
+                <div class="entry-content">
                     <?php the_content(); ?>
                 </div>
                 <footer>
                     <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
                 </footer>
                 <?php comments_template('/templates/comments.php'); ?>
+                </div>
             </div>
             <div class="large-3 cell large-order-1">
                 <div class="ps ps--narrow">
