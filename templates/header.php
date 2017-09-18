@@ -9,7 +9,7 @@
                 </div>
                 <div class="medium-6 cell text-right">
                     <a href="#" class="button">e-NAPLÓ</a><br>
-                    <a href="#">naptár</a> |  <a href="#">ebéd</a> | <a href="">"B" hét</a>
+                    <a href="#">naptár</a> |  <a href="#">csengetési rend</a> | <a href="#">ebéd</a> | <a href="">"B" hét</a>
                 </div>
             </div>
         </div>

@@ -2,5 +2,20 @@
     font-size: 1.25rem;
     font-family: bofy-font-family;
     margin:0 0 .875rem;
-    color:$primary-color;
+    //color:$primary-color;
+
+    .widget--footer & {
+        font-size: 1.125rem;
+        //text-transform: uppercase;
+        font-family: $header-font-family;
+        color:$alert-color;
+    }
+
+}
+
+.widget__readmore {
+    font-size: .75em;
+}
+.widget__body {
+    font-size: .875rem;
 }

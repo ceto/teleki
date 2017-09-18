@@ -1,9 +1,34 @@
 .menu {
+    //font-family: $header-font-family;
+
+}
+
+.sub-menu {
+    @extend .menu;
+}
+
+.dropdown.menu--main {
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
+    a {
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        padding: 1em 1.5rem;
+        //color:inherit;
+    }
+
+    .is-active {
+        > a {
+            background-color: transparent;
+            color: $alert-color;
+            text-decoration: underline;
+        }
+    }
 }
 
 .menu--side {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
     > li {
         &:not(:last-child) {
             margin-bottom: .25rem;

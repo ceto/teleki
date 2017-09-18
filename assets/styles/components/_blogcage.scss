@@ -1,0 +1,39 @@
+.blogcage {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.blogcage__item {
+    @include clearfix;
+    margin:0 0 .4em;
+    font-size: 1rem;
+
+}
+.blogcage__title {
+    font-size: 1em;
+    float:left;
+    width:calc(100% - 2.75rem);
+    margin:0;
+
+    a {
+        color: inherit;
+        &:hover, &:focus {
+            color:$alert-color;
+        }
+
+    }
+}
+
+.blogcage__updated {
+    padding-top: .25em;
+    line-height: $header-lineheight;
+    float:left;
+    display: block;
+    width:2.75rem;
+    font-size: .75em;
+    font-family: $header-font-family;
+    color:$alert-color;
+    font-weight: $global-weight-bold;
+
+}

@@ -58,18 +58,18 @@ function widgets_init() {
     'name'          => __('Primary', 'sage'),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3 class="widget__title">',
+    'after_title'   => '</h3><div class="widget__body">'
   ]);
 
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_widget' => '<div class="cell"><section class="widget widget--footer %1$s %2$s">',
+    'after_widget'  => '</div></section></div>',
+    'before_title'  => '<h3 class="widget__title">',
+    'after_title'   => '</h3><div class="widget__body">'
   ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');

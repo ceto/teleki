@@ -41,7 +41,7 @@ class NavWalker extends \Walker_Nav_Menu {
     if ($element->is_subitem) {
       foreach ($children_elements[$element->ID] as $child) {
         if ($child->current_item_parent || Utils\url_compare($this->archive, $child->url)) {
-          $element->classes[] = 'active';
+          $element->classes[] = 'is-active';
         }
       }
     }
@@ -49,7 +49,7 @@ class NavWalker extends \Walker_Nav_Menu {
     $element->is_active = (!empty($element->url) && strpos($this->archive, $element->url));
 
     if ($element->is_active) {
-      $element->classes[] = 'active';
+      $element->classes[] = 'is-active';
     }
 
     parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
@@ -65,14 +65,15 @@ class NavWalker extends \Walker_Nav_Menu {
 
       if ($this->archive) {
         if (Utils\url_compare($this->archive, $item->url)) {
-          $classes[] = 'active';
+          $classes[] = 'is-active';
         }
       }
     }
 
     // Remove most core classes
-    $classes = preg_replace('/(current(-menu-|[-_]page[-_])(item|parent|ancestor))/', 'active', $classes);
+    $classes = preg_replace('/(current(-menu-|[-_]page[-_])(item|parent|ancestor))/', 'is-active', $classes);
     $classes = preg_replace('/^((menu|page)[-_\w+]+)+/', '', $classes);
+
 
     // Re-add core `menu-item` class
     $classes[] = 'menu-item';

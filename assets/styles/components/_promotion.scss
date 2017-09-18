@@ -1,0 +1,41 @@
+.promotion {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    color: $white;
+    background-color: $primary-color;
+    background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+
+    @include breakpoint(large) {
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+    }
+}
+
+.promotion__inner {
+
+}
+
+.promotion__subtitle {
+    font-size: 1rem;
+    font-weight: $global-weight-bold;
+    margin: 0;
+    color:$warning-color;
+    text-transform: uppercase;
+}
+.promotion__title {
+    font-size: 1.5rem;
+    @include breakpoint(large) {
+        font-size: 2.25rem;
+    }
+}
+
+.promotion__lead {
+    border-left:.5rem dotted $white;
+    padding-left: 3%;
+
+}
+
+.promotion__action {
+    margin:0;
+}

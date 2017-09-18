@@ -10,6 +10,7 @@ namespace Roots\Soil\JqueryCDN;
  */
 function register_jquery() {
   $jquery_version = wp_scripts()->registered['jquery']->ver;
+  $jquery_version = '3.2.1';
 
   wp_deregister_script('jquery');
 
@@ -46,7 +47,8 @@ function jquery_local_fallback($src, $handle = null) {
   }
 
   if ($handle === 'jquery') {
-    $add_jquery_fallback = apply_filters('script_loader_src', \includes_url('/js/jquery/jquery.js'), 'jquery-fallback');
+    //$add_jquery_fallback = apply_filters('script_loader_src', \includes_url('/js/jquery/jquery.js'), 'jquery-fallback');
+    $add_jquery_fallback = apply_filters('script_loader_src', get_stylesheet_directory_uri().'/dist/scripts/jquery.js', 'jquery-fallback');
   }
 
   return $src;

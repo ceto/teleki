@@ -2,5 +2,6 @@
     padding:2rem 0;
 }
 .banner__nav {
-    background-color: $light-gray;
+    border-top: 1px solid $light-gray;
+    //border-bottom: 1px solid $light-gray;
 }

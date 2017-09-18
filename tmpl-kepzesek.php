@@ -8,13 +8,13 @@
 <div class="grid-container">
     <div class="grid-x grid-margin-x">
         <div class="large-12 cell">
-            <header class="pagehead">
+            <header class="pagehead ps ps--narrow">
                 <h1><?= Titles\title(); ?></h1>
                 <div class="lead pagehead__lead"><?php the_excerpt(); ?></div>
             </header>
         </div>
     </div>
-    <div class="grid-x grid-margin-x ">
+    <div class="grid-x grid-margin-x">
         <div class="cell large-12">
             <?php
             $the_kepzesek = new WP_Query( array(

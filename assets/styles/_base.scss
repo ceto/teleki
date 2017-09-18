@@ -3,7 +3,7 @@
     font-weight: $global-weight-bold;
 }
 
-a.readmore {
+.readmore {
     text-transform: uppercase;
     font-weight: $global-weight-bold;
     font-size: .666em;
@@ -16,6 +16,27 @@ a.readmore {
     }
 }
 
-a.readmore--large {
+.readmore--large {
     font-size: .875rem;
+}
+
+.button {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
+}
+
+blockquote {
+    &, & p {
+        font-size: 1.25rem;
+        font-style: italic;
+        //color:$secondary-color;
+    }
+
+    cite {
+        font-family: $header-font-family;
+        font-style: normal;
+        color:$body-font-color;
+        font-size:1rem;
+    }
 }
