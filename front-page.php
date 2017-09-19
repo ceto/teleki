@@ -30,8 +30,8 @@
 $alreadyprinted = 0;
 $the_stickypost = new WP_Query( array(
 'posts_per_page'      => 1,
-'post__in'            => get_option( 'sticky_posts' )
-//'ignore_sticky_posts' => 1,
+'post__in'            => get_option( 'sticky_posts' ),
+'ignore_sticky_posts' => 1
 ));
 ?>
 <section class="homebreaking">
@@ -69,9 +69,8 @@ $the_stickypost = new WP_Query( array(
                         )); ?>
                         <ul class="blogcage">
                             <?php while ( $the_cageposts->have_posts() ) : $the_cageposts->the_post(); ?>
-                            <li class="blogcage__item"><time class="blogcage__updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date('m/d.'); ?></time>
-                                <h3 class="blogcage__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            </li>
+                                <?php setup_postdata( $post ); ?>
+                                <?php get_template_part('templates/blogcage' ); ?>
                             <?php endwhile; ?>
                         </ul>
                         <?php wp_reset_query(); ?>

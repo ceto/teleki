@@ -28,7 +28,8 @@
 add_action( 'pre_get_posts', 'teleki_exclude_sticky_posts' );
 function teleki_exclude_sticky_posts( $query ) {
     if( $query->is_main_query() && $query->is_home() ) {
-        $query->set( 'post__not_in', get_option( 'sticky_posts' ) );
-        $query->set( 'ignore_sticky_posts', 1 );
+        $stickies = get_option( 'sticky_posts' );
+        $query->set( 'post__not_in', array(current($stickies)) );
+        //$query->set( 'ignore_sticky_posts', 0 );
     }
 }
