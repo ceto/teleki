@@ -1,14 +1,15 @@
 .hero {
-    padding-top: 4rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    //padding-bottom: 1.5rem;
     //border-bottom: 3rem solid $alert-color;
 
     color: $white;
     background-color: $primary-color;
     background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+    //background-image: linear-gradient(120deg, $primary-color 50%, $secondary-color 50%);
 
     @include breakpoint(large) {
         padding-top: 16vh;
-        padding-bottom: 4vh;
+        //padding-bottom: 7vh;
     }
 }

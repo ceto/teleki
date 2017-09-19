@@ -4,7 +4,14 @@
             <div class="grid-x grid-margin-x">
                 <div class="large-12 cell">
                     <div class="posthead__content">
-                        <h1 class="posthead__title"><?php the_title(); ?></h1>
+                        <h1 class="posthead__title">
+                        <?php if (is_single()):  ?>
+                            <?php the_title(); ?>
+                        <?php else: ?>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <?php endif; ?>
+
+                        </h1>
                         <div class="posthead__meta">
                             <?php get_template_part('templates/post-meta'); ?>
                         </div>
@@ -42,7 +49,7 @@
         <?php else: ?>
             <div class="grid-x grid-margin-x">
                 <div class="large-12 cell">
-                    <a class="readmore readmore--large" href="<?php the_permalink(); ?>">Részletek</a>
+                    <a class="readmore readmore--large" href="<?php the_permalink(); ?>">Tovább a részletekre</a>
                 </div>
             </div>
 

@@ -6,14 +6,17 @@
     background-color: $primary-color;
     background-image: linear-gradient(60deg, $primary-color, $secondary-color);
 
+}
+.promotion--light {
+    color:$body-font-color;
+}
+.promotion__inner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     @include breakpoint(large) {
         padding-top: 6vh;
         padding-bottom: 6vh;
     }
-}
-
-.promotion__inner {
-
 }
 
 .promotion__subtitle {
@@ -22,6 +25,7 @@
     margin: 0;
     color:$warning-color;
     text-transform: uppercase;
+    //text-shadow: 0 0 3px rgba(#fff,.25);
 }
 .promotion__title {
     font-size: 1.5rem;
@@ -38,4 +42,13 @@
 
 .promotion__action {
     margin:0;
+    &.readmore {
+        font-size: .875rem;
+        color:$white;
+        //text-decoration: underline;
+        &:hover, &:focus {
+            text-decoration: underline;
+            //color:$warning-color;
+        }
+    }
 }

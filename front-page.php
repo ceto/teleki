@@ -4,82 +4,90 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="medium-6 cell">
-                <p class="promotion__subtitle">Nyolcadikos vagy?</p>
-                <h3 class="promotion__title">Tanulj menő szakgimnáziumban</h3>
-                <div class="promotion__lead">
-                    <p>Szakmai érettségire készítünk fel 9-12. évfolyamon és biztos alapokat nyújtunk főiskolára és egyetemre.</p>
+                <div class="promotion__inner">
+                    <p class="promotion__subtitle">Nyolcadikos vagy?</p>
+                    <h3 class="promotion__title">Tanulj menő szakgimnáziumban</h3>
+                    <div class="promotion__lead">
+                        <p>Szakmai érettségire készítünk fel 9-12. évfolyamon és biztos alapokat nyújtunk tovább tanuláshoz.</p>
+                    </div>
+                    <a href="#" class="promotion__action readmore">Miért válaszd a Telekit</a>
                 </div>
-                <a href="#" class="promotion__action button small warning">Miért válaszd a Telekit</a>
             </div>
             <div class="medium-6 cell">
-                <p class="promotion__subtitle">Már van érettségid?</p>
-                <h3 class="promotion__title">Szerezz OKJ szakmát ingyen</h3>
-                <div class="promotion__lead">
-                    <p>OKJ-s ügyintézői és könyvelői képzéseinkkel közgazdasági területen helyezkedhetsz el.</p>
+                <div class="promotion__inner">
+                    <p class="promotion__subtitle">Már van érettségid?</p>
+                    <h3 class="promotion__title">Szerezz OKJ szakmát ingyen</h3>
+                    <div class="promotion__lead">
+                        <p>OKJ-s ügyintézői és könyvelői képzéseinkkel jól fizetett közgazdasági területen helyezkedhetsz el.</p>
+                    </div>
+                    <a href="<?php the_permalink(6); ?>" class="promotion__action readmore">Ismerd meg szaképzéseinket</a>
                 </div>
-                <a href="<?php the_permalink(6); ?>" class="promotion__action button small warning hollow">Ismerd meg szaképzéseinket</a>
             </div>
         </div>
     </div>
 </section>
-
 <?php
-    $alreadyprinted = 0;
-    $the_stickypost = new WP_Query( array(
-    'posts_per_page'      => 1,
-    'post__in'            => get_option( 'sticky_posts' )
-    //'ignore_sticky_posts' => 1,
-    ));
+$alreadyprinted = 0;
+$the_stickypost = new WP_Query( array(
+'posts_per_page'      => 1,
+'post__in'            => get_option( 'sticky_posts' )
+//'ignore_sticky_posts' => 1,
+));
 ?>
-
-<div class="grid-container ps ps--narrow ps--nobottom">
-    <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-            <?php while ( $the_stickypost->have_posts() ) : $the_stickypost->the_post(); ?>
+<section class="homebreaking">
+    <div class="grid-container ">
+        <div class="grid-x grid-margin-x">
+            <div class="large-12 cell">
+                <?php while ( $the_stickypost->have_posts() ) : $the_stickypost->the_post(); ?>
                 <?php
-                    setup_postdata( $post );
-                    $alreadyprinted = get_the_id();
+                setup_postdata( $post );
+                $alreadyprinted = get_the_id();
                 ?>
-            <div class="callout">
-                <p class=""><strong>BREAKING:</strong> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <a class="readmore float-right" href="<?php the_permalink(); ?>">Tovább a részletekre</a></p>
+                <div class="breaking">
+                    <span class="breaking__label">Fontos:</span>
+                    <h3 class="breaking__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <a class="breaking__readmore readmore" href="<?php the_permalink(); ?>">Tovább olvasom</a>
+                </div>
+                <?php endwhile; ?>
+                <?php wp_reset_query(); ?>
             </div>
-            <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
-
         </div>
     </div>
-</div>
-<div class="grid-container ps">
+</section>
+<div class="grid-container ps ps--narrow">
     <div class="grid-x grid-margin-x">
         <div class="large-4 cell">
-            <section class="widget widget--sidebar">
-                <h3 class="widget__title">Hírek és aktualitások</h3>
-                <div class="widget__body">
-                    <?php
-
-                    $the_cageposts = new WP_Query( array(
-                    'posts_per_page'      => 4,
-                    'post__not_in'            => array($alreadyprinted),
-                    //'ignore_sticky_posts' => 1,
-                    )); ?>
-                    <ul class="blogcage">
-                        <?php while ( $the_cageposts->have_posts() ) : $the_cageposts->the_post(); ?>
-                        <li class="blogcage__item"><time class="blogcage__updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date('m/d.'); ?></time>
-                            <h3 class="blogcage__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        </li>
-                        <?php endwhile; ?>
-                    </ul>
-                    <?php wp_reset_query(); ?>
-                    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore">További hírek a blogon</a>
-                </div>
-            </section>
+            <div class="ps ps--narrow">
+                <section class="widget widget--sidebar">
+                    <h3 class="widget__title">Hírek és aktualitások</h3>
+                    <div class="widget__body">
+                        <?php
+                        $the_cageposts = new WP_Query( array(
+                        'posts_per_page'      => 4,
+                        'post__not_in'            => array($alreadyprinted),
+                        //'ignore_sticky_posts' => 1,
+                        )); ?>
+                        <ul class="blogcage">
+                            <?php while ( $the_cageposts->have_posts() ) : $the_cageposts->the_post(); ?>
+                            <li class="blogcage__item"><time class="blogcage__updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date('m/d.'); ?></time>
+                                <h3 class="blogcage__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            </li>
+                            <?php endwhile; ?>
+                        </ul>
+                        <?php wp_reset_query(); ?>
+                        <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore">Még több hír a blogon</a>
+                    </div>
+                </section>
+            </div>
         </div>
         <div class="large-8 cell">
-            <header class="pagehead">
-                <h1 class="pagehead__title"><small>Budapesti Gazdasági Szakképzési Centrum</small>Teleki Blanka Közgazdasági Szakgimnázium</h1>
-            </header>
-            <?php the_content(); ?>
-            <p><a href="#" class="readmore readmore--large">Tudj meg többet iskolánkról</a></p>
+            <div class="ps ps--narrow">
+                <header class="pagehead">
+                    <h1 class="pagehead__title"><small>Budapesti Gazdasági Szakképzési Centrum</small>Teleki Blanka Közgazdasági Szakgimnázium</h1>
+                </header>
+                <?php the_content(); ?>
+                <p><a href="#" class="readmore readmore--large">Tudj meg többet iskolánkról</a></p>
+            </div>
         </div>
     </div>
 </div>

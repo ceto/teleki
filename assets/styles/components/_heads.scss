@@ -27,7 +27,7 @@
     }
 }
 .kepzeshead {
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 1.5rem;
 
     color: $white;
@@ -102,6 +102,11 @@
     margin:0;
     color:$primary-color;
     //font-weight: $global-weight-normal;
+    a {
+        &:hover, &:focus {
+            color:$alert-color;
+        }
+    }
 }
 .posthead__lead {
     font-size: 1.25rem;

@@ -8,8 +8,7 @@
     font-weight: $global-weight-bold;
     font-size: .666em;
     &:before {
-        content: '\00bb';
-        margin-right: .25em;
+        content: '\00bb'+' ';
     }
     &:hover, &:focus {
         color:$alert-color;
@@ -38,5 +37,6 @@ blockquote {
         font-style: normal;
         color:$body-font-color;
         font-size:1rem;
+        font-weight: $global-weight-bold;
     }
 }

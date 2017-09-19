@@ -1,0 +1,48 @@
+.homebreaking {
+    padding:.875rem 0;
+    border-bottom: 1px solid $light-gray;
+}
+.breaking {
+    font-size: 1.125rem;
+    line-height: $paragraph-lineheight;
+    padding:.25rem 0 0;
+
+    @include clearfix();
+}
+.breaking__label {
+    font-size: .875em;
+    font-weight: $global-weight-bold;
+    line-height: inherit;
+
+    display: inline-block;
+    float: left;
+
+    margin-right: .5em;
+    //margin-top: .0125em;
+
+    text-transform: uppercase;
+
+    color: $alert-color;
+}
+.breaking__title {
+    font-size: inherit;
+    line-height: inherit;
+
+    display: inline-block;
+    float: left;
+
+    margin: 0;
+    > a {
+        color:inherit;
+        &:hover, &:focus {
+            color:$primary-color;
+        }
+    }
+}
+
+.breaking__readmore {
+    float: right;
+    //color:inherit;
+    margin-left:.5em;
+    margin-top: .125em;
+}

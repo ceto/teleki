@@ -1,0 +1,23 @@
+# dev:
+#     scheme: ftp
+#     host: ftp.my-dev-server.com
+#     port: 21
+#     user: user
+#     pass: password
+#     check: true
+#     path:
+#         local: release/
+#         remote: public_html/
+
+dev:
+    scheme: sftp
+    host: szabogabi.com
+    port: 22
+    user: ceto
+    privateKey: /Users/ceto/.ssh/huba.pem
+    check: true
+    path:
+        remote: /var/www/teleki/wp-content/themes/teleki/
+    include:
+        "dist/**/*": "dist/"
+    exclude: ["dploy.yaml", "**/.DS_Store"]
