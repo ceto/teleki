@@ -29,7 +29,12 @@
         }
     }
 }
-
+.postcard__label {
+    font-size: .666em;
+    font-family: $body-font-family;
+    color:$alert-color;
+    text-transform: uppercase;
+}
 .postcard__meta {
     font-size: .875rem;
     font-weight: $global-weight-bold;
