@@ -23,7 +23,7 @@
     font-size: 1rem;
     font-weight: $global-weight-bold;
     margin: 0;
-    color:$warning-color;
+    //color:$warning-color;
     text-transform: uppercase;
     //text-shadow: 0 0 3px rgba(#fff,.25);
 }
@@ -35,7 +35,7 @@
 }
 
 .promotion__lead {
-    border-left:.5rem dotted $white;
+    border-left:.5rem dotted $warning-color;
     padding-left: 3%;
 
 }
