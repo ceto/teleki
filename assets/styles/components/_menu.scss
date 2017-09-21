@@ -11,10 +11,13 @@
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
     a {
-        text-transform: uppercase;
-        font-size: 1.125rem;
-        padding: 1em 1.5rem;
+        text-transforrm: capitalize;
+        font-size: 1.25rem;
+        padding: .75em 1rem .25em;
         //color:inherit;
+        @include breakpoint('xlarge') {
+            font-size: 1.333rem;
+        }
     }
 
     .is-active {
@@ -22,6 +25,93 @@
             background-color: transparent;
             color: $alert-color;
             text-decoration: underline;
+        }
+    }
+}
+
+.menu--mobilemain {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    a {
+        text-transforrm: capitalize;
+        font-size: 1.666rem;
+        padding: .5em 0;
+        color:$white;
+    }
+
+    .is-active {
+        > a {
+            background-color: transparent;
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+
+    .sub-menu {
+        padding-bottom:.75rem;
+        a {
+            font-size: 1.125rem;
+            padding: .5em 0;
+        }
+    }
+}
+
+.menu--student {
+    font-weight: $global-weight-bold;
+    > li {
+        &:not(:last-child()):after{
+            content:'•';
+            display: inline-block;
+            margin:0 .5em;
+        }
+        &:last-child():after{
+            content:'';
+            display: inline-block;
+            margin:0 .875em 0 0;
+        }
+    }
+    a {
+        text-transform: uppercase;
+        font-size: .75rem;
+        padding: .333em 0;
+        color: $white;
+        display: inline-block;
+        &:hover, &:focus {
+            color:$warning-color;
+        }
+    }
+
+    .is-active {
+        > a {
+            color: $white;
+        }
+    }
+}
+
+.menu--mobilestudent {
+    font-weight: $global-weight-bold;
+    > li {
+        &:not(:last-child()):after{
+            content:'•';
+            display: inline-block;
+            margin:0 .333em;
+        }
+    }
+    a {
+        text-transform: uppercase;
+        font-size: .875rem;
+        padding: .125em 0;
+        margin:.25em 0;
+        color: $white;
+        display: inline-block;
+        &:hover, &:focus {
+            color:$warning-color;
+        }
+    }
+
+    .is-active {
+        > a {
+            color: $warning-color;
         }
     }
 }

@@ -1,0 +1,55 @@
+.brand {
+    @include clearfix();
+    display: block;
+    font-size: .75rem;
+    @include breakpoint('xlarge') {
+        font-size: 1rem;
+    }
+}
+.brand__logo {
+    display: block;
+    float: left;
+    max-width: 4em;
+    image-rendering: -webkit-optimize-contrast;
+}
+.brand__name {
+    font-size: 2em;
+    font-weight: $global-weight-bold;
+    line-height: 1;
+
+    display: block;
+    float: right;
+    //background-color: red;
+
+    width: calc(100% - 2em);
+    margin: .5em 0 .125em;
+    padding-left: .5em;
+
+    text-transform: uppercase;
+    @include breakpoint('large') {
+        margin-top:.25em;
+        margin-bottom: .0666em;
+    }
+    span {
+        display: none;
+
+        @include breakpoint('large') {
+            display: inline;
+        }
+    }
+
+}
+.brand__descr {
+    font-size: .875em;
+    line-height: $header-lineheight;
+    //background-color: blue;
+    display: none;
+    clear: right;
+
+    margin-left: 4.6133em;
+    padding-left: 1.333em;
+
+    @include breakpoint('large') {
+        display: block;
+    }
+}

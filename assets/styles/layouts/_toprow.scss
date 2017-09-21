@@ -1,0 +1,27 @@
+.toprow {
+    @include clearfix();
+    background-color: $primary-color;
+    color:$white;
+}
+.toprow__nav {
+    float:right;
+    max-width: calc(100% - 5rem);
+    margin:.333rem 0;
+}
+.toprow__action {
+    float:right;
+    line-height: 1;
+    font-size: .75rem;
+    color:$white;
+    display: inline-block;
+    background-color: $alert-color;
+    padding: .5em 1em;
+    margin-top:.3666rem;
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
+    border-radius: 1em;
+    &:hover, &:focus {
+        color:$white;
+        background-color: $warning-color;
+    }
+}

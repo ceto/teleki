@@ -1,0 +1,22 @@
+.mobilemodal {
+    padding:1rem 5% 1rem;
+    background-color: $primary-color;
+    background-image: linear-gradient(135deg, $primary-color 50%, $secondary-color);
+    color:$white;
+    text-align: center;
+
+    p {
+        font-size: .875rem;
+    }
+
+}
+.mobilemodal__mainnav {
+    margin: 2rem 0;
+}
+
+.mobilemodal__studentnav {
+    margin: 2rem 0;
+    padding:2rem 0 0;
+    border-top:1px solid rgba($white,.25);
+
+}
