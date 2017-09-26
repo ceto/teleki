@@ -15,7 +15,7 @@ $stickyposts = new WP_Query( $args );
     <div class="grid-container">
         <header class="posthead">
             <div class="grid-x grid-margin-x align-center">
-                <div class="large-8 cell">
+                <div class="large-9 cell">
                     <div class="posthead__content">
                         <h1 class="posthead__title">
                         <?php if (is_single()):  ?>
@@ -39,7 +39,7 @@ $stickyposts = new WP_Query( $args );
 <?php wp_reset_postdata(); ?>
 <div class="grid-container">
     <div class="ps grid-x grid-margin-x align-center">
-        <div class="large-8 cell">
+        <div class="large-9 cell">
             <div class="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-2">
                 <?php while (have_posts()) : the_post(); ?>
                 <div class="cell">

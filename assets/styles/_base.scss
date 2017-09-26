@@ -1,3 +1,41 @@
+html {
+    @media screen and (min-width: 100em) {
+        font-size: 112.5%;
+    }
+}
+.grid-container {
+    @include breakpoint(tablet) {
+        max-width: 95%;
+    }
+    @include breakpoint(large) {
+
+    }
+    @include breakpoint(xlarge) {
+        max-width: 92%;
+    }
+    @include breakpoint(xxlarge) {
+        max-width: 90%;
+    }
+    @media screen and (min-width: 100em) {
+        max-width: $global-width;
+    }
+    .grid-container {
+        @include breakpoint(tablet) {
+            max-width: $global-width;
+        }
+        @include breakpoint(large) {
+            max-width: $global-width;
+        }
+        @include breakpoint(xlarge) {
+            max-width: $global-width;
+        }
+        @include breakpoint(xxlarge) {
+            max-width: $global-width;
+        }
+    }
+
+}
+
 .lead {
     //font-family: $header-font-family;
     font-weight: $global-weight-bold;
