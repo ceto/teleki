@@ -1,6 +1,6 @@
 html {
-    @media screen and (min-width: 100em) {
-        font-size: 112.5%;
+    @media screen and (min-width: 110em) {
+        font-size: 105.625%;
     }
 }
 .grid-container {
@@ -16,7 +16,7 @@ html {
     @include breakpoint(xxlarge) {
         max-width: 90%;
     }
-    @media screen and (min-width: 100em) {
+    @media screen and (min-width: 110em) {
         max-width: $global-width;
     }
     .grid-container {
