@@ -1,0 +1,17 @@
+.mapcanvas {
+    //margin-top: 2rem;
+    min-height:15rem;
+    border-top:1px solid $light-gray;
+    @include breakpoint(large) {
+        height: 52vh;
+    }
+}
+
+.contactcontent {
+    a {
+        //color: $warning-color;
+    }
+    .cell {
+        padding-bottom:1.5rem;
+    }
+}

@@ -98,6 +98,7 @@ $global-prototype-breakpoints: false;
 $global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
+$contrast-warnings: false;
 
 @include add-foundation-colors;
 
@@ -279,19 +280,19 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
-$button-padding: 0.85em 1.25em;
+$button-font-family: $body-font-family;
+$button-padding: 0.85em 1.25em 0.875em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
-$button-color-alt: $black;
+$button-color: #fff;
+$button-color-alt: #fff;
 $button-radius: 2em;
-$button-hollow-border-width: 1px;
+$button-hollow-border-width: 2px;
 $button-sizes: (
-  tiny: 0.6rem,
-  small: 0.875rem,
+  tiny: 0.666rem,
+  small: 0.75rem,
   default: 0.9rem,
   large: 1.25rem,
 );
@@ -810,10 +811,10 @@ $tab-content-padding: 1rem;
 // 52. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: 1px solid $primary-color;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-shadow-hover: 0 0 .5rem 1px rgba(#000, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 

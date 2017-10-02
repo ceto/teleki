@@ -20,35 +20,28 @@
 }
 
 .promotion__subtitle {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: $global-weight-bold;
     margin: 0;
+    font-family: $header-font-family;
     //color:$warning-color;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     //text-shadow: 0 0 3px rgba(#fff,.25);
 }
 .promotion__title {
     font-size: 1.5rem;
+    margin:0 0 0;
     @include breakpoint(large) {
         font-size: 2.25rem;
     }
 }
 
 .promotion__lead {
-    border-left:.5rem dotted $warning-color;
-    padding-left: 3%;
+    // border-left:.5rem dotted $warning-color;
+    // padding-left: 3%;
 
 }
 
 .promotion__action {
-    margin:0;
-    &.readmore {
-        font-size: .875rem;
-        color:$white;
-        //text-decoration: underline;
-        &:hover, &:focus {
-            text-decoration: underline;
-            //color:$warning-color;
-        }
-    }
+    margin:.25rem 0 0;
 }

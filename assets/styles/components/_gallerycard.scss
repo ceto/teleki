@@ -1,0 +1,48 @@
+.gallerycard {
+
+}
+.gallerycard__fig {
+    margin:0 0 .875rem;
+    .thumbnail {
+        margin-bottom: 0;
+    }
+}
+.gallerycard__header {
+}
+.gallerycard__title {
+    font-size: .875rem;
+    margin:0 0 .125em;
+    @include breakpoint(large) {
+         font-size: 1.125rem;
+    }
+
+    a {
+        color:inherit;
+
+        &:hover, &:focus {
+            color:$alert-color;
+        }
+    }
+}
+.gallerycard__label {
+    font-size: .666em;
+    font-family: $body-font-family;
+    color:$alert-color;
+    text-transform: uppercase;
+}
+.gallerycard__meta {
+    font-size: .75rem;
+    font-weight: $global-weight-bold;
+    margin:0 0 0;
+    font-family: $header-font-family;
+    time {
+        color:$primary-color;
+    }
+}
+.gallerycard__excerpt {
+    font-size: .875rem;
+    margin:.5em 0 .5em 0;
+    p {
+        margin:0;
+    }
+}

@@ -1,5 +1,8 @@
 .sitefooter {
-    border-top: 1px solid $light-gray;
+    border-top: 1px solid scale-color($light-gray, $lightness:50%);
+    .ps--bordered + & {
+        border-top: none;
+    }
 }
 
 .sitefooter__main {

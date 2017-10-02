@@ -10,7 +10,7 @@
                     <div class="promotion__lead">
                         <p>Szakmai érettségire készítünk fel 9-12. évfolyamon és biztos alapokat nyújtunk tovább tanuláshoz.</p>
                     </div>
-                    <a href="#" class="promotion__action readmore">Miért válaszd a Telekit</a>
+                    <a href="#" class="promotion__action button small alert">Miért válaszd a Telekit</a>
                 </div>
             </div>
             <div class="medium-6 cell">
@@ -20,7 +20,7 @@
                     <div class="promotion__lead">
                         <p>OKJ-s ügyintézői és könyvelői képzéseinkkel jól fizetett közgazdasági területen helyezkedhetsz el.</p>
                     </div>
-                    <a href="<?php the_permalink(6); ?>" class="promotion__action readmore">Ismerd meg szaképzéseinket</a>
+                    <a href="<?php the_permalink(6); ?>" class="promotion__action button small warning">Ismerd meg szaképzéseinket</a>
                 </div>
             </div>
         </div>
@@ -69,8 +69,8 @@ $the_stickypost = new WP_Query( array(
                         )); ?>
                         <ul class="blogcage">
                             <?php while ( $the_cageposts->have_posts() ) : $the_cageposts->the_post(); ?>
-                                <?php setup_postdata( $post ); ?>
-                                <?php get_template_part('templates/blogcage' ); ?>
+                            <?php setup_postdata( $post ); ?>
+                            <?php get_template_part('templates/blogcage' ); ?>
                             <?php endwhile; ?>
                         </ul>
                         <?php wp_reset_query(); ?>
@@ -95,26 +95,40 @@ $the_stickypost = new WP_Query( array(
         <div class="grid-x grid-margin-x">
             <div class="large-8 cell">
                 <div class="promotion__inner">
-                    <p class="promotion__subtitle">Példa promóciós sávra</p>
-                    <h3 class="promotion__title">Itt valami nagyon fontos aktualitás olvasható</h3>
+                    <p class="promotion__subtitle">Terembérleti lehetőség</p>
+                    <h3 class="promotion__title">Rendezvények lebonyolítására helyet biztosítunk</h3>
                     <div class="promotion__lead">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptatibus distinctio aperiam, quos deserunt eveniet minus minima magnam quam molestiae cumque doloribus autem sed, obcaecati ab tenetur blanditiis quibusdam reprehenderit.</p>
+                        <p>Külön díjszabás ellenében, iskolánk bérbe adja különböző helyiségeit: Többféle igényt kielégítő tornaterem, taniroda, jól felszerelt aula és tantermek, számítógépterem.</p>
                     </div>
-                    <a href="#" class="promotion__action button alert">Klikkelj ide barátom</a>
+                    <a href="#" class="promotion__action button small alert">Díjszabás és részletek</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="testiblock ps">
+<section class="front__bottom ps ps--narrow ps--xlight ps--bordered">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x align-center">
-            <div class="medium-10 large-8 cell">
-                <h3 class="widget__title">Rólunk mondták</h3>
-                <blockquote class="testimonial">
-                    <p>Nagy öröm volt ma szülőként meglátogatni az az iskolát, ahol 19 éve végeztem. Az én időmben is nagyszerű iskola volt, de ha lehet, még jobb lett. Örülök, hogy lányom is itt fog tanulni</p>
-                    <cite>Esther Volek<br>CEO @ Microsoft Hungary</cite>
-                </blockquote>
+        <div class="grid-x grid-margin-x">
+            <div class="large-6 cell">
+                <div class="ps ps--narrow">
+                    <header class="pagehead">
+                        <h1 class="pagehead__title"><small>Felnőtt tagozat</small>Ingyenes OKJ képzések</h1>
+                        <div class="pagehead__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla earum reprehenderit dolorum! Provident error, similique nemo, enim odit quaerat, consequatur veniam, placeat delectus quo blanditiis. Debitis eum, alias ipsum!</div>
+                    </header>
+                    <br>
+                    <p><a href="<?php the_permalink(6); ?>" class="readmore readmore--large">Tovább az OKJ képzésekre</a></p>
+                </div>
+            </div>
+            <div class="large-6 cell">
+                <div class="ps ps--narrow">
+                    <header class="pagehead">
+                        <h1 class="pagehead__title"><small>Rólunk mondták</small></h1>
+                    </header>
+                    <blockquote class="testimonial">
+                        <p>Nagy öröm volt ma szülőként meglátogatni az az iskolát, ahol 19 éve végeztem. Az én időmben is nagyszerű iskola volt, de ha lehet, még jobb lett. Örülök, hogy lányom is itt fog tanulni</p>
+                        <cite>Esther Volek<br>CEO @ Microsoft Hungary</cite>
+                    </blockquote>
+                </div>
             </div>
         </div>
     </div>

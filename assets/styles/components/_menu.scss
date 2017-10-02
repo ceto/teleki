@@ -59,10 +59,12 @@
 .menu--student {
     font-weight: $global-weight-bold;
     > li {
+        line-height: 1.4;
         &:not(:last-child()):after{
             content:'•';
             display: inline-block;
             margin:0 .5em;
+            transform: translateY(.125em);
         }
         &:last-child():after{
             content:'';

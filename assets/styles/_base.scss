@@ -58,9 +58,10 @@ html {
 }
 
 .button {
-    font-family: $header-font-family;
+    //font-family: $header-font-family;
     font-weight: $global-weight-bold;
     text-transform: uppercase;
+    text-shadow: 0 0 2px rgba(#000,.25);
 }
 
 blockquote {
@@ -76,5 +77,11 @@ blockquote {
         color:$body-font-color;
         font-size:1rem;
         //font-weight: $global-weight-bold;
+    }
+}
+
+.grid-thumbs {
+    .thumbnail {
+        margin-bottom:0;
     }
 }
