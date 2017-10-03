@@ -4,8 +4,10 @@
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
+
+<?php get_template_part( '/templates/breaking'); ?>
 <?php get_template_part('templates/page', 'header'); ?>
-<div class="ps ps--narrow  ps--bordered">
+<div class="ps ps--narrow ps--bordered">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-12 cell">
@@ -54,7 +56,7 @@
                 <br>
                 <?php
                     $the_galleries = new WP_Query( array(
-                    'posts_per_page'      => 5,
+                    'posts_per_page'      => 4,
                     'post_type' => array(post),
                     'category__in' => array(6,8),
                     'tax_query' => array(
@@ -67,7 +69,7 @@
                     )
                     ));
                 ?>
-                <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 tablet-up-3 large-up-4 xxlarge-up-5">
+                <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 large-up-4">
                     <?php while ($the_galleries->have_posts() ) : $the_galleries->the_post(); ?>
                     <?php setup_postdata( $post ); ?>
                     <div class="cell">

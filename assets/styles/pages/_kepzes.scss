@@ -1,0 +1,26 @@
+.kepzes__navcell {
+    border-top: 1px solid $xlight-gray;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    @include breakpoint('large') {
+        border-top: none;
+        border-left: 1px solid $xlight-gray;
+        margin-bottom: 0;
+        padding-top:0;
+        padding-left: 3%;
+    }
+}
+.kepzes__nav {
+
+}
+.kepzes__footer {
+    & > *:first-child() {
+        border-top: 1px solid $xlight-gray;
+        padding-top: 3rem;
+        margin-top: 3rem;
+    }
+    .widget {
+        margin-bottom: 3rem;
+    }
+
+}

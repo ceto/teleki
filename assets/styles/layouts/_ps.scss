@@ -70,8 +70,8 @@
   border-color: scale-color($light-gray, $lightness:-5%);
 }
 .ps--xlight {
-  background-color: scale-color($light-gray, $lightness:87.5%);
-  border-color: scale-color($light-gray, $lightness:50%);
+  background-color: $xxlight-gray;
+  border-color: $xlight-gray;
 }
 
 

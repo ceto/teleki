@@ -1,6 +1,8 @@
 .homebreaking {
     padding:.875rem 0;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $xlight-gray;
+    border-top: 1px solid $xlight-gray;
+    background-color: $xxlight-gray;
 }
 .breaking {
     font-size: 1.125rem;

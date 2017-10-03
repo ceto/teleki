@@ -1,12 +1,10 @@
 .widget__title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: bofy-font-family;
     margin:0 0 .875rem;
     //color:$primary-color;
 
     .widget--footer & {
-        font-size: 1.125rem;
-        //text-transform: uppercase;
         font-family: $header-font-family;
         color:$alert-color;
     }
