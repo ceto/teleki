@@ -1,0 +1,28 @@
+.promotiles {
+    background-color: #000;
+    color:#fff;
+}
+
+.promotile {
+    border-right:2px solid $white;
+    padding:1rem 5%;
+    //background-color: red;
+    height:16rem;
+    @include breakpoint(large) {
+        height: 30vw;
+    }
+}
+
+
+.promotile--large {
+    border-right: none;
+    border-bottom:2px solid $white;
+    text-align: right;
+    @include breakpoint(large) {
+        border-bottom: none;
+        border-right:2px solid $white;
+    }
+
+}
+
+

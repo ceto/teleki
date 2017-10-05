@@ -1,0 +1,25 @@
+.membercard {
+}
+.membercard__fig {
+    margin:0 0 .875rem;
+}
+.membercard__header {
+}
+.membercard__title {
+    font-size: 1rem;
+    margin:0 0;
+    line-height: 1.2;
+    @include breakpoint(large) {
+         font-size: 1.333rem;
+    }
+}
+.membercard__titulus {
+    margin:0;
+    font-weight: $global-weight-bold;
+}
+
+.membercard__text {
+    font-size: .875rem;
+    margin:.5em 0 .5em 0;
+    font-style: italic;
+}

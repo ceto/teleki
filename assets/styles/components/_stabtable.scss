@@ -1,0 +1,26 @@
+.stabtabletitle {
+    font-size: 1.75rem;
+}
+.stabtable {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+
+    // thead {
+    //     display: none;
+    // }
+
+}
+.stabtable__name {
+    font-family: $body-font-family;
+    font-weight: $global-weight-bold;
+
+    small {
+        font-size: .875em;
+        display: block;
+        font-weight: $global-weight-normal;
+        line-height: 1;
+        font-style: italic;
+    }
+}
