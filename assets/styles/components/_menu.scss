@@ -11,7 +11,6 @@
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
     a {
-        text-transforrm: capitalize;
         font-size: 1.25rem;
         padding: .75em 1rem .25em;
         //color:inherit;
@@ -26,6 +25,49 @@
             color: $alert-color;
             text-decoration: underline;
         }
+    }
+
+
+    .is-dropdown-submenu {
+
+        background-color: rgba($primary-color, .95);
+        border:none;
+        padding:1.5em 0 2em;
+        box-shadow: 0 .25rem 1rem 0 rgba(#000,.5);
+        min-width: 14em;
+        top:140% !important;
+        left:1rem !important;
+
+
+        a {
+            font-size: .875em;
+            padding: .666em 1rem .75em;
+            //font-weight: $global-weight-normal;
+            color:$white;
+            font-family: $body-font-family;
+            &:hover, &:focus {
+                background-color: $primary-color;
+                color:#fff;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            top:-.666rem;
+            left:1.125rem;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: .666rem solid transparent;  /* left arrow slant */
+            border-right: .666rem solid transparent; /* right arrow slant */
+            border-bottom: .666rem solid rgba($primary-color, .95); /* bottom, add background color here */
+            font-size: 0;
+            line-height: 0;
+
+
+        }
+
     }
 }
 

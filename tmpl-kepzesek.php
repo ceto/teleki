@@ -38,10 +38,26 @@
     <div class="grid-x grid-margin-x">
         <div class="large-8 cell">
             <div class="ps">
-                            <?php the_content(); ?>
+                <?php the_content(); ?>
             </div>
 
         </div>
     </div>
 </div>
+<section class="ps ps--narrow ps--xlight ps--bordered">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="large-8 cell">
+                <div class="ps ps--narrow">
+                    <header class="pagehead">
+                        <h1 class="pagehead__title"><small>Nappali tagozat</small>Szakgimnázium a 9-12. évfolyamon</h1>
+                        <div class="pagehead__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla earum reprehenderit dolorum! Provident error, similique nemo, enim odit quaerat, consequatur veniam, placeat delectus quo blanditiis. Debitis eum, alias ipsum!</div>
+                    </header>
+                    <br>
+                    <p><a href="#" class="readmore readmore--large">Szakgimnáziumi képzés bemutatása</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <?php endwhile; ?>

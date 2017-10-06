@@ -16,8 +16,7 @@ $the_stickypost = new WP_Query( array(
                 $alreadyprinted = get_the_id();
                 ?>
                 <div class="breaking">
-                    <span class="breaking__label">Fontos:</span>
-                    <h3 class="breaking__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <h3 class="breaking__title"><span class="breaking__label">Fontos</span><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <a class="breaking__readmore readmore" href="<?php the_permalink(); ?>">Tovább olvasom</a>
                 </div>
                 <?php endwhile; ?>

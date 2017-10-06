@@ -23,7 +23,7 @@
 
     }
     &:not(:last-child) {
-        border-right: .25rem solid #fff;
+        border-right: .125rem solid #fff;
     }
 
     @include breakpoint(medium) {
@@ -32,11 +32,14 @@
     @include breakpoint(tablet) {
         width: 25%;
         height: 40vw;
+        &:not(:last-child) {
+            border-width: .25rem;
+        }
     }
     @include breakpoint(large) {
         height: 40vw;
         &:not(:last-child) {
-            border-width: .5rem;
+            border-width: .333rem;
         }
     }
     @include breakpoint(xlarge) {
@@ -56,11 +59,11 @@
 
     @include breakpoint(small only ) {
         border-right: none !important;
-        border-bottom: .25rem solid #fff;
+        border-bottom: .125rem solid #fff;
     }
     @include breakpoint(medium only ) {
         border-right: none !important;
-        border-bottom: .25rem solid #fff;
+        border-bottom: .125rem solid #fff;
     }
     @include breakpoint(tablet) {
         width: 50%;

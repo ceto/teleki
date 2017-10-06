@@ -12,25 +12,27 @@
     @include clearfix();
 }
 .breaking__label {
-    font-size: .875em;
-    font-weight: $global-weight-bold;
-    line-height: inherit;
+    font-size: 1em;
+    //font-weight: $global-weight-bold;
+    //line-height: inherit;
 
-    display: inline-block;
-    float: left;
+    //display: inline-block;
+    //float: left;
 
-    margin-right: .5em;
+    //margin-right: .5em;
     //margin-top: .0125em;
 
     text-transform: uppercase;
 
     color: $alert-color;
+    &:after {
+        content: ': ';
+    }
 }
 .breaking__title {
     font-size: inherit;
     line-height: inherit;
 
-    display: inline-block;
     float: left;
 
     margin: 0;

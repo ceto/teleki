@@ -1,5 +1,5 @@
 <article <?php post_class(); ?>>
-    <div class="grid-container">
+    <div class="grid-container ps--inverse">
         <header class="posthead">
             <div class="grid-x grid-margin-x">
                 <div class="large-8 cell">
