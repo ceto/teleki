@@ -1,28 +1,160 @@
 .promotiles {
-    background-color: #000;
-    color:#fff;
+    display: flex;
+    flex-flow: row wrap;
+    text-shadow: 0 0 .25rem rgba(#000,.25);
 }
 
 .promotile {
-    border-right:2px solid $white;
-    padding:1rem 5%;
-    //background-color: red;
-    height:16rem;
+    position: relative;
+
+    overflow: hidden;
+
+    width: 50%;
+    height: 15rem;
+
+    color: $white;
+    background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+
+    &:nth-child(2) {
+        background-image: linear-gradient(60deg, $success-color, $primary-color);
+    }
+    &:nth-child(3) {
+        background-image: linear-gradient(60deg, $alert-color, $warning-color);
+
+    }
+    &:not(:last-child) {
+        border-right: .25rem solid #fff;
+    }
+
+    @include breakpoint(medium) {
+        height: 50vw;
+    }
+    @include breakpoint(tablet) {
+        width: 25%;
+        height: 40vw;
+    }
     @include breakpoint(large) {
+        height: 40vw;
+        &:not(:last-child) {
+            border-width: .5rem;
+        }
+    }
+    @include breakpoint(xlarge) {
+        height: 33.333vw;
+    }
+    @include breakpoint(xxlarge) {
         height: 30vw;
     }
+
 }
 
 
 .promotile--large {
-    border-right: none;
-    border-bottom:2px solid $white;
-    text-align: right;
-    @include breakpoint(large) {
-        border-bottom: none;
-        border-right:2px solid $white;
-    }
+    width: 100%;
 
+    text-align: right;
+
+    @include breakpoint(small only ) {
+        border-right: none !important;
+        border-bottom: .25rem solid #fff;
+    }
+    @include breakpoint(medium only ) {
+        border-right: none !important;
+        border-bottom: .25rem solid #fff;
+    }
+    @include breakpoint(tablet) {
+        width: 50%;
+
+        border-bottom: none;
+    }
 }
 
 
+.promotile__inner {
+    position: absolute;
+    bottom: 5%;
+
+    max-width: $global-width/2.125;
+
+    @include xy-gutters($gutter-position: left right bottom top);
+    .promotile--large & {
+        right: 0;
+    }
+}
+.promotile__bgimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    a {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        mix-blend-mode: multiply;
+        filter: grayscale(1);
+    }
+}
+.promotile__subtitle {
+    font-family: $header-font-family;
+    font-size: .875rem;
+    font-weight: $global-weight-bold;
+    line-height: 1.2;
+
+    margin: 0 0 .125em;
+
+    @include breakpoint(large) {
+        font-size: 1rem;
+    }
+    .promotile--large & {
+        font-size: 1.125rem;
+
+        @include breakpoint(large) {
+            font-size: 1.5rem;
+        }
+    }
+}
+.promotile__title {
+    font-size: 1.125rem;
+
+    margin: 0 0 0;
+
+    @include breakpoint(large) {
+        font-size: 1.5rem;
+    }
+    .promotile--large & {
+        font-size: 1.5rem;
+
+        @include breakpoint(large) {
+            font-size: 2.5rem;
+        }
+    }
+}
+.promotile__lead {
+    font-size: .875rem;
+
+    display: none;
+
+    @include breakpoint(large) {
+        display: block;
+    }
+    .promotile--large & {
+        font-size: 1.125rem;
+    }
+}
+.promotile__action {
+    margin: .75em 0 0;
+    text-shadow:none;
+}
