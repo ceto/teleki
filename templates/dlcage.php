@@ -1,5 +1,5 @@
 <?php if ( have_rows('downloads') ): ?>
-    <section class="widget">
+    <section class="widget widget--dlcage">
         <h3 class="widget__title">Letölthető anyagok</h3>
         <div class="widget__body">
             <ul class="dlcage">

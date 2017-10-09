@@ -1,0 +1,16 @@
+.page-template-template-dokumentumok {
+    .widget--dlcage {
+        .dlcage {
+            @include breakpoint(xlarge) {
+                font-size: 1.125rem;
+            }
+        }
+
+        .widget__title {
+            @include breakpoint(xlarge) {
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}

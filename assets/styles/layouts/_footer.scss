@@ -1,13 +1,17 @@
 .sitefooter {
-    border-top: 1px solid scale-color($light-gray, $lightness:50%);
+    border-top: 1px solid $xlight-gray;
+
     .ps--bordered + & {
         border-top: none;
     }
+
 }
 
 .sitefooter__main {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
+
 
     @include breakpoint(large) {
         padding-top: 8vh;

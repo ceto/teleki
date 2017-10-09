@@ -1,0 +1,21 @@
+.front__thecontent {
+         background-image: url(../images/nyitolap.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% auto;
+
+     > .grid-container {
+        padding-top: 3.5vw;
+        padding-bottom: 32vw;
+
+
+    }
+}
+
+.front__bottom {
+    // color: $white;
+    // background-color: $primary-color;
+    // background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+    border-top:5px solid $alert-color;
+    //background-color: $xxlight-gray;
+}

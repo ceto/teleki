@@ -1,38 +1,60 @@
+/*
+<section class="promotion">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="tablet-8 large-9 cell">
+                <div class="promotion__inner">
+                    <p class="promotion__subtitle">Terembérleti lehetőség</p>
+                    <h3 class="promotion__title">Rendezvények lebonyolítására helyet biztosítunk</h3>
+                    <div class="promotion__lead">
+                        <p>Külön díjszabás ellenében, iskolánk bérbe adja különböző helyiségeit: Többféle igényt kielégítő tornaterem, taniroda, jól felszerelt aula és tantermek, számítógépterem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet-4 large-3 cell tablet-text-right">
+                <a href="#" class="promotion__action button small alert">Díjszabás és részletek</a>
+            </div>
+        </div>
+    </div>
+</section>
+*/
 .promotion {
+
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    color: $white;
-    background-color: $primary-color;
-    background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+    background-color: $xlight-gray;
+    border-top:1px solid $light-gray;
+    border-bottom:1px solid $light-gray;
+    //background-image: linear-gradient(60deg, $primary-color, $secondary-color);
 
 }
 .promotion--light {
     color:$body-font-color;
 }
 .promotion__inner {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    @include breakpoint(large) {
-        padding-top: 6vh;
-        padding-bottom: 6vh;
-    }
+
 }
 
 .promotion__subtitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: $global-weight-bold;
     margin: 0;
     font-family: $header-font-family;
-    //color:$warning-color;
+
+    color:$primary-color;
     //text-transform: uppercase;
     //text-shadow: 0 0 3px rgba(#fff,.25);
+    @include breakpoint(large) {
+        font-size: 1.25rem;
+    }
 }
 .promotion__title {
+    //color: $alert-color;
     font-size: 1.5rem;
     margin:0 0 0;
     @include breakpoint(large) {
-        font-size: 2.25rem;
+        font-size: 1.666rem;
     }
 }
 

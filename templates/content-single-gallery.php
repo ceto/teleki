@@ -1,3 +1,4 @@
+<?php get_template_part( '/templates/breaking'); ?>
 <article <?php post_class(); ?>>
     <div class="grid-container">
         <header class="posthead">
@@ -76,4 +77,3 @@
 
     </div>
 </article>
-<?php get_template_part( '/templates/breaking'); ?>

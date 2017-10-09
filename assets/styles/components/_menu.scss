@@ -10,6 +10,22 @@
 .dropdown.menu--main {
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
+    > li {
+        &:first-child() {
+            > a {
+                padding-left:0;
+            }
+        }
+        &:last-child() {
+            > a {
+                padding-right:0;
+            }
+        }
+        &.is-dropdown-submenu-parent>a:after,
+        &.is-dropdown-submenu-parent>a:after {
+            margin-top:0;
+        }
+    }
     a {
         font-size: 1.25rem;
         padding: .75em 1rem .25em;
@@ -36,7 +52,7 @@
         box-shadow: 0 .25rem 1rem 0 rgba(#000,.5);
         min-width: 14em;
         top:140% !important;
-        left:1rem !important;
+        left:0rem !important;
 
 
         a {

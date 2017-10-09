@@ -54,7 +54,7 @@
                         <div class="pagehead__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla earum reprehenderit dolorum! Provident error, similique nemo, enim odit quaerat, consequatur veniam, placeat delectus quo blanditiis. Debitis eum, alias ipsum!</div>
                     </header>
                     <br>
-                    <p><a href="#" class="readmore readmore--large">Szakgimnáziumi képzés bemutatása</a></p>
+                    <p><a href="<?php the_permalink(157); ?>" class="readmore readmore--large">Szakgimnáziumi képzés bemutatása</a></p>
                 </div>
             </div>
         </div>
