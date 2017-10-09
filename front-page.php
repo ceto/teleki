@@ -15,10 +15,9 @@
                     </header>
                 </div>
             </div>
-            <div class="large-4 xxlarge-3 cell">
-                <div class="ps ps--narrow ">
-                    <div class="callout">
-                    <section class="widget widget--sidebar">
+            <div class="large-4 cell">
+                <div class="ps ps--narrow ps--nobottom">
+                    <section class="widget widget--blogcage">
                         <h3 class="widget__title">Hírek és aktualitások</h3>
                         <div class="widget__body">
                             <?php
@@ -38,19 +37,18 @@
                         </div>
                     </section>
                 </div>
-                </div>
             </div>
         </div>
         <div class="grid-x grid-margin-x">
             <div class="tablet-6 large-4 cell tablet-order-1">
-                <div class="ps ps--narrow ps--notop">
+                <div class="ps ps--narrow ps--bottom">
                     <h4>Szakgimnázium</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
                     <p><a href="<?php the_permalink(157); ?>" class="readmore">Szakgimnáziumi képzés bemutatása</a></p>
                 </div>
             </div>
             <div class="tablet-6 large-4 cell tablet-order-2">
-                <div class="ps ps--narrow ps--notop">
+                <div class="ps ps--narrow ps--bottom">
                     <h4>Felnőtt képzés</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
                     <p><a href="<?php the_permalink(6); ?>" class="readmore">Ingyenes OKJ képzések</a></p>

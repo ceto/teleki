@@ -14,8 +14,8 @@
             </header>
         </div>
     </div>
-    <div class="grid-x grid-margin-x">
-        <div class="cell large-12">
+    <div class="grid-x grid-margin-x align-center">
+        <div class="cell xlarge-10">
             <?php
             $the_kepzesek = new WP_Query( array(
             'posts_per_page'      => -1,
@@ -24,7 +24,7 @@
             'order' => 'ASC'
             ));
             ?>
-            <div class="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-3">
+            <div class="grid-x grid-margin-x grid-margin-y tablet-up-2 large-up-2">
                 <?php while ($the_kepzesek->have_posts() ) : $the_kepzesek->the_post(); ?>
                 <?php setup_postdata( $post ); ?>
                 <div class="cell">

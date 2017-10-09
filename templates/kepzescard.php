@@ -1,8 +1,12 @@
 <div class="kepzescard">
-    <h3 class="kepzescard__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <p class="kepzescard__kivonat"><?= get_field('kivonat') ?></p>
+    <figure class="kepzescard__ill">
+        <a href="<?php the_permalink(); ?>">
+            <img src="http://placehold.it/480x480" alt="">
+        </a>
+    </figure>
     <div class="kepzescard__body">
-           <?php the_excerpt(); ?>
+        <h3 class="kepzescard__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <p class="kepzescard__kivonat"><?= get_field('kivonat') ?></p>
+        <a class="kepzescard__action readmore" href="<?php the_permalink(); ?>">Részletek</a>
     </div>
-    <a class="kepzescard__action readmore" href="<?php the_permalink(); ?>">Részletek</a>
 </div>

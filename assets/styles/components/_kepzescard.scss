@@ -1,16 +1,44 @@
 .kepzescard {
+    @include clearfix();
     margin-bottom: 2rem;
-    &:before {
-        display: block;
-        content: '';
-        width:16.666%;
-        height:0;
-        border-bottom: .5rem dotted $alert-color;
-        margin:0 0 1rem;
+
+    .readmore {
+        color:$alert-color;
     }
 }
+.kepzescard__ill {
+    width:25%;
+    float:left;
+
+    a {
+        display: block;
+
+        &:hover, &:focus {
+            img {
+                border-color:$alert-color;
+                //border-width:2px;
+                box-shadow: 0 0 .5rem 0 rgba(#000,.125);
+            }
+        }
+    }
+
+    img {
+        border: .25rem solid #fff;
+        border-radius: 50%;
+        display: block;
+
+
+
+    }
+}
+.kepzescard__body {
+    width:75%;
+    float:left;
+    padding: 2.5% 0 0 2.5%;
+    max-width: 25rem;
+}
 .kepzescard__title {
-    text-transform: uppercase;
+    //text-transform: uppercase;
     font-size: 1.25rem;
     margin:0 0 .125em;
     @include breakpoint(large) {
@@ -24,6 +52,15 @@
             color:$alert-color;
         }
     }
+
+    // &:before {
+    //     display: block;
+    //     content: '';
+    //     width:12.666%;
+    //     height:0;
+    //     border-bottom: .333em dotted $alert-color;
+    //     margin:0 0 .5em;
+    // }
 }
 
 .kepzescard__kivonat {
@@ -31,12 +68,6 @@
     font-weight: $global-weight-bold;
     color:$primary-color;
     //line-height: $header-lineheight;
-    margin:0 0 0;
-}
-.kepzescard__body {
-    font-size: .875rem;
-    margin:.5em 0 .5em 0;
-    p {
-        margin:0;
-    }
+    margin:0 0 1em;
+
 }
