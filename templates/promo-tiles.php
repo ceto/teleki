@@ -2,7 +2,7 @@
     <div class="promotile promotile--large">
         <figure class="promotile__bgimage">
             <a href="#">
-                <img src="http://lorempixel.com/1200/800" alt="">
+                <img src="<?= get_stylesheet_directory_uri().'/dist/images/nyitolap.jpg' ?>" alt="">
             </a>
         </figure>
         <div class="promotile__inner">
@@ -17,7 +17,7 @@
     <div class="promotile">
         <figure class="promotile__bgimage">
             <a href="<?php the_permalink(6); ?>">
-                <img src="http://lorempixel.com/800/1200" alt="">
+                <img src="//placekitten.com/480/800" alt="">
             </a>
         </figure>
         <div class="promotile__inner">
@@ -32,7 +32,7 @@
     <div class="promotile">
         <figure class="promotile__bgimage">
             <a href="<?php the_permalink(6); ?>">
-                <img src="http://lorempixel.com/800/1199" alt="">
+                <img src="//placekitten.com/480/900" alt="">
             </a>
         </figure>
         <div class="promotile__inner">

@@ -1,0 +1,29 @@
+.recommendbtn {
+    font-weight: $global-weight-bold;
+
+    width: 100%;
+    margin: 0 0 2em;
+    padding: 1.25em 1em;
+
+    text-transform: uppercase;
+
+    color: $white;
+    border: .125em solid  scale-color($alert-color, $lightness: -14%);
+    background-color: $alert-color;
+    //box-shadow: 0 0 1.5em 0 rgba(#000,.25);
+    &:focus,
+    &:hover {
+        color: $white;
+        background-color: scale-color($alert-color, $lightness: -14%);;
+    }
+}
+
+
+.recommend-dropdown {
+    width:300px;
+    //box-shadow: 0 0 0 100vw rgba(#000,.5);
+}
+
+.fb-like {
+    width:100%;
+}

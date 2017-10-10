@@ -27,53 +27,59 @@
     }
 }
 .kepzeshead {
-    border-top:1px solid $xlight-gray;
+    position: relative;
+    //border-top:1px solid $xlight-gray;
     border-bottom:1px solid $xlight-gray;
     width:100%;
-    overflow: hidden;
 
 
-    //color: $white;
-    background-color: $xxlight-gray;
+    color: $white;
+    //background-color: $xxlight-gray;
     //background-color: $primary-color;
     //background-image: linear-gradient(60deg, $primary-color, $secondary-color);
-
-
-
+    background-color: #000;
 }
 .kepzeshead__content {
-    padding-top: 1.5rem;
+    position: relative;
+    padding-top: 5rem;
     padding-bottom: 1.5rem;
     @include breakpoint(tablet) {
-        padding-top: 5rem;
+        padding-top: 20vw;
     }
     @include breakpoint(large) {
-        padding-top: 12vw;
+        padding-top: 16vw;
         padding-bottom: 3rem;
     }
 }
 
-.kepzeshead__figcell {
-    position: relative;
-}
 .kepzeshead__fig {
-
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.kepzeshead__imgwrap {
+    width:100%;
+    height:100%;
+    max-width: $global-width*1.1;
+    margin:0 auto;
     background-color: $primary-color;
     background-image: linear-gradient(60deg, $primary-color, $secondary-color);
-    background-image: inherit;
-    //display: none;
-    @include breakpoint(tablet) {
-        position: absolute;
-        left:0;
-        top:0;
-        width: 36.666vw;
-        height: 100%;
+    .page-template-tmpl-kiemelt & {
+        background-color: $alert-color;
+        background-image: linear-gradient(60deg, $alert-color, $warning-color);
     }
-    @include breakpoint(large) {
-        width: 36.666vw;
-        left:-1px;
+    @include breakpoint(xxlarge) {
+        -webkit-mask-image: -webkit-gradient(
+        linear, left top, right top,
+        color-stop(0.00,  rgba(0,0,0,0)),
+        color-stop(0.10,  rgba(0,0,0,.5)),
+        color-stop(0.2,  rgba(0,0,0,1)),
+        color-stop(0.8,  rgba(0,0,0,1)),
+        color-stop(0.9,  rgba(0,0,0,.5)),
+        color-stop(1.00,  rgba(0,0,0,0)));
     }
-
 }
 
 .kepzeshead__img {
@@ -82,8 +88,6 @@
     object-fit: cover;
     mix-blend-mode: multiply;
     filter: grayscale(1);
-    //border-radius:50%;
-    //max-width: 15rem;
 }
 
 .kepzeshead__title {

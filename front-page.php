@@ -1,6 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
 <?php while (have_posts()) : the_post(); ?>
-<?php //get_template_part( '/templates/hero','front'); ?>
 <?php get_template_part( '/templates/promo','tiles'); ?>
 <?php get_template_part( '/templates/breaking'); ?>
 <section class="front__thecontent">
