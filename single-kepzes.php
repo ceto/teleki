@@ -3,16 +3,22 @@
     <header class="kepzeshead ">
         <div class="grid-container">
             <div class="grid-x grid-margin-x ">
-                <div class="large-8 cell">
-                    <h1 class="kepzeshead__title"><?php the_title(); ?></h1>
-                    <p class="kepzeshead__kivonat"><?= get_field('kivonat') ?></p>
-                    <div class="kepzeshead__lead"><?php the_excerpt(); ?></div>
-                    <?php if ($okjnum=get_field('okjszam')) :  ?>
-                    <p class="kepzeshead__okjnum"><small>OKJ szám:</small> <?= $okjnum ?></p>
-                    <?php endif; ?>
+                <div class="tablet-8 large-8 cell">
+                    <div class="kepzeshead__content">
+                        <?php if ($okjnum=get_field('okjszam')) :  ?>
+                        <p class="kepzeshead__okjnum"><small>OKJ szám:</small> <?= $okjnum ?></p>
+                        <?php endif; ?>
+
+                        <h1 class="kepzeshead__title"><?php the_title(); ?></h1>
+                        <p class="kepzeshead__kivonat"><?= get_field('kivonat') ?></p>
+                        <!-- <div class="kepzeshead__lead lead"><?php the_excerpt(); ?></div> -->
+
+                    </div>
                 </div>
-                <div class="cell large-4 text-center">
-                    <!-- <img class="kepzeshead__ill" src="http://placehold.it/640x640" alt=""> -->
+                <div class="tablet-4 large-4 cell kepzeshead__figcell">
+                    <figure class="kepzeshead__fig">
+                        <img class="kepzeshead__img" src="//lorempixel.com/800/480" alt="">
+                    </figure>
                 </div>
             </div>
         </div>
@@ -21,7 +27,7 @@
         <div class="grid-x grid-margin-x">
             <div class="large-8 cell">
                 <div class="ps ps--narrow">
-                    <!-- <div class="lead"><?php the_excerpt(); ?></div> -->
+                    <div class="lead"><?php the_excerpt(); ?></div>
                     <div class="kepzes__content">
                         <?php the_content(); ?>
                     </div>

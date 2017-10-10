@@ -27,44 +27,94 @@
     }
 }
 .kepzeshead {
-    padding-top: 5rem;
-    padding-bottom: 1.5rem;
+    border-top:1px solid $xlight-gray;
+    border-bottom:1px solid $xlight-gray;
+    width:100%;
+    overflow: hidden;
+
 
     //color: $white;
+    background-color: $xxlight-gray;
     //background-color: $primary-color;
     //background-image: linear-gradient(60deg, $primary-color, $secondary-color);
 
-    @include breakpoint(large) {
-        padding-top: 12vh;
-        padding-bottom: 4vh;
-    }
-    border-bottom:1px solid $xlight-gray;
+
+
 }
-.kepzeshead__ill {
-    border-radius:50%;
+.kepzeshead__content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    @include breakpoint(tablet) {
+        padding-top: 5rem;
+    }
+    @include breakpoint(large) {
+        padding-top: 12vw;
+        padding-bottom: 3rem;
+    }
+}
+
+.kepzeshead__figcell {
+    position: relative;
+}
+.kepzeshead__fig {
+
+    background-color: $primary-color;
+    background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+    background-image: inherit;
+    //display: none;
+    @include breakpoint(tablet) {
+        position: absolute;
+        left:0;
+        top:0;
+        width: 36.666vw;
+        height: 100%;
+    }
+    @include breakpoint(large) {
+        width: 36.666vw;
+        left:-1px;
+    }
+
+}
+
+.kepzeshead__img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    filter: grayscale(1);
+    //border-radius:50%;
     //max-width: 15rem;
 }
+
 .kepzeshead__title {
-    color:$primary-color;
+    //color:$primary-color;
     //font-weight: $global-weight-normal;
     margin: 0;
+    font-size: 1.75rem;
+    @include breakpoint(large) {
+        font-size: 2.125rem;
+    }
+    @include breakpoint(xlarge) {
+        font-size: 2.75rem;
+    }
 }
 .kepzeshead__kivonat {
     font-size: 1.125rem;
     font-weight: $global-weight-bold;
-
-    margin: 0 0 1rem;
-
-    //color: $warning-color;
-    //font-family: $header-font-family;
+    margin: 0 0 0;
+    line-height: $header-lineheight;
+    font-family: $header-font-family;
+    @include breakpoint(large) {
+        font-size: 1.333rem;
+    }
 }
 .kepzeshead__okjnum {
     font-family: $header-font-family;
     font-size: 1.5rem;
     font-weight: $global-weight-bold;
-    line-height: 1;
+    line-height: $header-lineheight;
 
-    margin: .75em 0 0;
+    margin: 0 0 .125em;
 
     //text-align: right;
 
