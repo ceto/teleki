@@ -134,16 +134,17 @@
         text-transform: uppercase;
         font-size: .75rem;
         padding: .333em 0;
-        color: $white;
+        color: inherit;
         display: inline-block;
         &:hover, &:focus {
-            color:$warning-color;
+            color:$alert-color;
         }
     }
 
     .is-active {
         > a {
-            color: $white;
+            color: $alert-color;
+            background-color: transparent;
         }
     }
 }

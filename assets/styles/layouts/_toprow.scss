@@ -1,7 +1,9 @@
 .toprow {
     @include clearfix();
-    background-color: $primary-color;
-    color:$white;
+    background-color: $xlight-gray;
+    border-bottom: 1px solid $light-gray;
+    color:$primary-color;
+    color:$dark-gray;
 }
 .toprow__nav {
     float:right;
