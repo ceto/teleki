@@ -8,8 +8,11 @@
     <header class="kepzeshead ">
         <figure class="kepzeshead__fig">
             <div class="kepzeshead__imgwrap">
-                <img class="kepzeshead__img" src="<?= get_stylesheet_directory_uri().'/dist/images/nyitolap.jpg' ?>" alt="">
-                <!-- <img class="kepzeshead__img" src="//placekitten.com/1280/400" alt=""> -->
+                <?php if ( get_field('fejleckep') ) :?>
+                    <img class="kepzeshead__img" src="<?= get_field('fejleckep')  ?>" alt="<?php the_title(); ?>">
+                <?php else: ?>
+                    <img class="kepzeshead__img" src="<?= get_stylesheet_directory_uri().'/dist/images/nyitolap.jpg' ?>" alt="<?php the_title(); ?>">
+                <?php endif; ?>
             </div>
         </figure>
         <div class="grid-container">
