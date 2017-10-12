@@ -1,9 +1,9 @@
 <?php get_template_part( '/templates/breaking'); ?>
 <article <?php post_class(); ?>>
-    <div class="grid-container">
-        <header class="posthead">
+    <header class="posthead ps">
+        <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="large-8 cell">
+                <div class="large-9 xxlarge-8 cell">
                     <div class="posthead__content">
                         <h1 class="posthead__title">
                         <?php if (is_single()):  ?>
@@ -15,18 +15,16 @@
                         <div class="posthead__meta">
                             <?php get_template_part('templates/post-meta'); ?>
                         </div>
-                        <div class="posthead__lead"><?php the_excerpt(); ?></div>
+                        <div class="posthead__lead lead"><?php the_excerpt(); ?></div>
                     </div>
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <?php
         $gallery = get_field('gallery');
         $size = 'medium'; // (thumbnail, medium, large, full or custom size)
         if( $gallery ): ?>
-
-
         <div class="ps ps--xlight ps--bordered ps--narrow">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
@@ -46,7 +44,7 @@
 
     <div class="grid-container ps ps--narrow">
         <div class="grid-x grid-margin-x">
-            <div class="large-8 cell">
+            <div class="large-9 xxlarge-8 cell">
                 <div class="post__content">
                     <?php the_content(); ?>
                 </div>

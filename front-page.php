@@ -4,14 +4,31 @@
 <?php get_template_part( '/templates/breaking'); ?>
 <section class="front__thecontent">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x align-justify">
+        <div class="grid-x grid-margin-x">
             <div class="cell large-8">
                 <div class="ps ps--narrow ps--nobottom">
                     <header class="pagehead">
                         <h1 class="pagehead__title"><small>Budapesti Gazdasági Szakképzési Centrum</small>Teleki Blanka Közgazdasági Szakgimnázium</h1>
                         <div class="lead pagehead__lead"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo perspiciatis, similique sint eius officiis dolorem quo obcaecati in labore deleniti ipsa atque facere debitis, aperiam tenetur amet voluptates sunt magnam.</p></div>
-                        <p><a href="<?php the_permalink(12); ?>" class="readmore readmore--large">Tudj meg többet iskolánkról</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni, placeat amet quam odio a aliquid natus itaque voluptatibus et molestiae eveniet debitis nam, corporis delectus at facere. Suscipit, molestiae.</p>
+                        <p><a href="<?php the_permalink(12); ?>" class="readmore">Tudj meg többet iskolánkról</a></p>
                     </header>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="tablet-6 large-6 cell">
+                        <div class="ps ps--narrow ps--nobottom">
+                            <h4>Szakgimnázium</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
+                            <p><a href="<?php the_permalink(157); ?>" class="readmore">Szakgimnáziumi képzés bemutatása</a></p>
+                        </div>
+                    </div>
+                    <div class="tablet-6 large-6 cell">
+                        <div class="ps ps--narrow ps--nobottom">
+                            <h4>Felnőtt képzés</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
+                            <p><a href="<?php the_permalink(6); ?>" class="readmore">Ingyenes OKJ képzések</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="large-4 cell">
@@ -35,22 +52,6 @@
                             <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore">Még több hír a blogon</a>
                         </div>
                     </section>
-                </div>
-            </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-            <div class="tablet-6 large-4 cell tablet-order-1">
-                <div class="ps ps--narrow ps--bottom">
-                    <h4>Szakgimnázium</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
-                    <p><a href="<?php the_permalink(157); ?>" class="readmore">Szakgimnáziumi képzés bemutatása</a></p>
-                </div>
-            </div>
-            <div class="tablet-6 large-4 cell tablet-order-2">
-                <div class="ps ps--narrow ps--bottom">
-                    <h4>Felnőtt képzés</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
-                    <p><a href="<?php the_permalink(6); ?>" class="readmore">Ingyenes OKJ képzések</a></p>
                 </div>
             </div>
         </div>

@@ -1,47 +1,44 @@
 <section class="promotiles">
+    <?php $target=get_field('target_1'); ?>
     <div class="promotile promotile--large">
         <figure class="promotile__bgimage">
-            <a href="#">
-                <img src="<?= get_stylesheet_directory_uri().'/dist/images/nyitolap.jpg' ?>" alt="">
+            <a href="<?php the_permalink($target->ID); ?>">
+                <img src="<?= get_field('image_1'); ?>" alt="">
             </a>
         </figure>
         <div class="promotile__inner">
-            <p class="promotile__subtitle">Nyolcadikos vagy?</p>
-            <h3 class="promotile__title">Tanulj menő szakgimnáziumban</h3>
+            <p class="promotile__subtitle"><?= get_field('subtitle_1'); ?></p>
+            <h3 class="promotile__title"><?= get_field('title_1'); ?></h3>
             <div class="promotile__lead">
-                <p>Szakmai érettségire készítünk fel 9-12. évfolyamon és biztos alapokat nyújtunk tovább tanuláshoz.</p>
+                <p><?= get_field('text_1'); ?></p>
             </div>
-            <a href="<?php the_permalink(157); ?>" class="promotile__action button small warning">Miért a Teleki?</a>
+            <a href="<?php the_permalink($target->ID); ?>" class="promotile__action button small alert"><?= get_field('button_1'); ?></a>
         </div>
     </div>
+    <?php $target=get_field('target_2'); ?>
     <div class="promotile">
         <figure class="promotile__bgimage">
-            <a href="<?php the_permalink(6); ?>">
-                <img src="//placekitten.com/480/800" alt="">
+            <a href="<?php the_permalink($target->ID); ?>">
+                <img src="<?= get_field('image_2'); ?>" alt="">
             </a>
         </figure>
         <div class="promotile__inner">
-            <p class="promotile__subtitle">Már van érettségid?</p>
-            <h3 class="promotile__title">Szerezz OKJ szakmát ingyen</h3>
-<!--             <div class="promotile__lead">
-                <p>OKJ-s ügyintézői és könyvelői képzéseinkkel jól fizetett közgazdasági területen helyezkedhetsz el.</p>
-            </div> -->
-            <a href="<?php the_permalink(6); ?>" class="promotile__action button tiny alert">Tovább a szaképzésre</a>
+            <p class="promotile__subtitle"><?= get_field('subtitle_2'); ?></p>
+            <h3 class="promotile__title"><?= get_field('title_2'); ?></h3>
+            <a href="<?php the_permalink($target->ID) ?>" class="promotile__action button tiny alert">&raquo;</a>
         </div>
     </div>
+    <?php $target=get_field('target_3'); ?>
     <div class="promotile">
         <figure class="promotile__bgimage">
-            <a href="<?php the_permalink(6); ?>">
-                <img src="//placekitten.com/480/900" alt="">
+            <a href="<?php the_permalink($target->ID); ?>">
+                <img src="<?= get_field('image_3'); ?>" alt="">
             </a>
         </figure>
         <div class="promotile__inner">
-            <p class="promotile__subtitle">Nem csak játék és szórakozás</p>
-            <h3 class="promotile__title">Telekisek hétköznapjai</h3>
-<!--             <div class="promotile__lead">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, modi quidem dignissimos voluptatum officiis tenetur fugit illum tempora.</p>
-            </div> -->
-            <a href="<?php the_permalink(55); ?>" class="promotile__action button tiny secondary">Less be hozzánk</a>
+            <p class="promotile__subtitle"><?= get_field('subtitle_3'); ?></p>
+            <h3 class="promotile__title"><?= get_field('title_3'); ?></h3>
+            <a href="<?php the_permalink($target->ID); ?>" class="promotile__action button tiny alert">&raquo;</a>
         </div>
     </div>
 </section>
