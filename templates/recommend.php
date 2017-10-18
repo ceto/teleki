@@ -1,4 +1,4 @@
-<button class="recommendbtn" type="button" data-toggle="recommend-dropdown">Ajánlom ismerősnek</button>
+<button class="recommendbtn" type="button" data-toggle="recommend-dropdown">Ajánlom ismerősnek <svg class="icon"><use xlink:href="#icon-thumbs-up"></use></svg></button>
 <div class="dropdown-pane recommend-dropdown" id="recommend-dropdown" data-dropdown data-hover="true" data-hover-pane="true" data-position="top" data-alignment="center">
     <p><strong>Ezekre bökj! És köszi.</strong><br><small>Dr. Illés Valér - igazgaztó</small></p>
     <!-- Your like button code -->

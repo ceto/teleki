@@ -7,6 +7,15 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "foundation-sites": "^6.4.3"
+    "foundation-sites": "^6.4.3",
+    "motion-ui": "^1.2.3"
+  },
+  "overrides": {
+    "motion-ui": {
+      "main": [
+        "dist/motion-ui.js",
+        "src/motion-ui.scss"
+      ]
+    }
   }
 }

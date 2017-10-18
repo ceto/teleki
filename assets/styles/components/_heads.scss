@@ -37,11 +37,28 @@
     //background-color: $primary-color;
     //background-image: linear-gradient(60deg, $primary-color, $secondary-color);
     background-color: #000;
+    &:after {
+        content:'';
+        //z-index: 2;
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        width:33.333%;
+        height:100%;
+        background-image: url(../images/pattern-white20.png);
+        background-repeat: repeat;
+        background-size: 12rem auto;
+        background-position: left top;
+
+
+    }
 }
 .kepzeshead__content {
     position: relative;
     padding-top: 5rem;
     padding-bottom: 1.5rem;
+    z-index: 1;
     @include breakpoint(tablet) {
         padding-top: 20vw;
     }

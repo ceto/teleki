@@ -1,25 +1,39 @@
 .membercard {
+    text-align: center;
 }
 .membercard__fig {
-    margin:0 0 .875rem;
+     img {
+        border-radius:50%;
+        max-width: 90%;
+    }
 }
 .membercard__header {
 }
 .membercard__title {
     font-size: 1rem;
-    margin:0 0;
+    margin:1.25em 0 0;
     line-height: 1.2;
     @include breakpoint(large) {
-         font-size: 1.333rem;
+         font-size: 1.4rem;
     }
 }
 .membercard__titulus {
     margin:0;
-    font-weight: $global-weight-bold;
+    font-size: .875rem;
+    line-height: 1.2;
+    //font-weight: $global-weight-bold;
+    //text-decoration: underline;
+    font-family: $body-font-family;
+    @include breakpoint(large) {
+         font-size: 1rem;
+    }
 }
 
 .membercard__text {
     font-size: .875rem;
-    margin:.5em 0 .5em 0;
+    margin:.75em 0 .5em 0;
     font-style: italic;
+    @include breakpoint(large) {
+         //font-size: 1rem;
+    }
 }

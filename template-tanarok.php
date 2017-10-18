@@ -26,7 +26,7 @@
                     <div class="cell">
                         <div class="membercard">
                             <figure class="membercard__fig">
-                                <img src="//placehold.it/480x640/?text=portre" alt="<?= get_sub_field('nev') ?>">
+                                <img src="//placehold.it/640x640/?text=portre" alt="<?= get_sub_field('nev') ?>">
                             </figure>
                             <h3 class="membercard__title"><?= get_sub_field('nev') ?></h3>
                             <div class="membercard__titulus"><?= get_sub_field('beosztas') ?></div>
@@ -45,7 +45,7 @@
 <div class="ps p--narrow">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
-            <div class="large-10 cell">
+            <div class="tablet-10 large-8 xxlarge-6 cell">
                 <?php if ( have_rows('tanarok') ): ?>
                 <h2 class="stabtabletitle">Tanárok</h2>
                 <table class="stabtable hover unstriped">

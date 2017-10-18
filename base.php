@@ -25,8 +25,9 @@ use Roots\Sage\Wrapper;
             do_action('get_footer');
             get_template_part('templates/footer');
             get_template_part('templates/mobilemodal');
-            wp_footer();
         ?>
+        <?php get_template_part('templates/svg','icons'); ?>
+        <?php wp_footer(); ?>
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];

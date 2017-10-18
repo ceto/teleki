@@ -25,7 +25,9 @@
         <div class="promotile__inner">
             <p class="promotile__subtitle"><?= get_field('subtitle_2'); ?></p>
             <h3 class="promotile__title"><?= get_field('title_2'); ?></h3>
-            <a href="<?php the_permalink($target->ID) ?>" class="promotile__action button tiny alert">&raquo;</a>
+            <a href="<?php the_permalink($target->ID) ?>" class="promotile__action promotile__action--onlyicon">
+                <svg class="icon"><use xlink:href="#icon-arrow-outline-right"></use></svg>
+            </a>
         </div>
     </div>
     <?php $target=get_field('target_3'); ?>
@@ -38,7 +40,9 @@
         <div class="promotile__inner">
             <p class="promotile__subtitle"><?= get_field('subtitle_3'); ?></p>
             <h3 class="promotile__title"><?= get_field('title_3'); ?></h3>
-            <a href="<?php the_permalink($target->ID); ?>" class="promotile__action button tiny alert">&raquo;</a>
+            <a href="<?php the_permalink($target->ID); ?>" class="promotile__action promotile__action--onlyicon">
+                <svg class="icon"><use xlink:href="#icon-arrow-outline-right"></use></svg>
+            </a>
         </div>
     </div>
 </section>

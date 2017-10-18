@@ -19,6 +19,11 @@ var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 
+var rename      = require('gulp-rename');
+var svgstore    = require('gulp-svgstore');
+var svgmin      = require('gulp-svgmin');
+var inject      = require('gulp-inject');
+
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
 
@@ -198,6 +203,25 @@ gulp.task('scripts', ['jshint'], function() {
     .pipe(writeToManifest('scripts'));
 });
 
+//SVG fonts inject
+gulp.task('svgicons', function () {
+  var svgs = gulp
+        .src('assets/icons/*.svg')
+        .pipe(rename({prefix: 'icon-'}))
+        .pipe(svgmin())
+        .pipe(svgstore({ inlineSvg: true }));
+
+  function fileContents (filePath, file) {
+      return file.contents.toString();
+  }
+
+  return gulp
+      .src('templates/svg-icons.php')
+      .pipe(inject(svgs, { transform: fileContents }))
+      .pipe(gulp.dest('templates'));
+});
+
+
 // ### Fonts
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
 // structure. See: https://github.com/armed/gulp-flatten
@@ -258,6 +282,7 @@ gulp.task('watch', function() {
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
+  gulp.watch([path.source + 'icons/**/*.svg'], ['svgicons']);
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
 });
 
@@ -267,7 +292,7 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
-              ['fonts', 'images'],
+              ['fonts', 'images', 'svgicons'],
               callback);
 });
 

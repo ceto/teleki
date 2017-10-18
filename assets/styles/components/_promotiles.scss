@@ -74,6 +74,7 @@
 
 
 .promotile__inner {
+    pointer-events: none;
     position: absolute;
     bottom: 5%;
 
@@ -98,16 +99,26 @@
 
         width: 100%;
         height: 100%;
+        transition: all .4s;
+        &:hover, &:focus {
+            background-color: #dedede;
+            img {
+                //mix-blend-mode: normal;
+                filter: grayscale(0);
+            }
+        }
     }
     img {
         display: block;
 
         width: 100%;
         height: 100%;
+        transition:inherit;
 
         object-fit: cover;
         mix-blend-mode: multiply;
         filter: grayscale(1);
+
     }
 }
 .promotile__subtitle {
@@ -160,4 +171,15 @@
 .promotile__action {
     margin: .75em 0 0;
     text-shadow:none;
+}
+
+.promotile__action--onlyicon {
+    display: block;
+    line-height: 1;
+    color:inherit;
+    font-size: 1.75em;
+    margin-top: .25em;
+    &:hover, &:focus {
+        color:$alert-color;
+    }
 }
