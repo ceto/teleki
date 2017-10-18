@@ -77,7 +77,7 @@
                         <button data-slide="2"></button>
                     </nav>
                         <ul class="orbit-container">
-                            <li class="orbit-slide">
+                            <li class="orbit-slide is-active">
                                 <div>
                                     <blockquote class="testimonial">
                                         <p>Nagy öröm volt ma szülőként meglátogatni az az iskolát, ahol 19 éve végeztem. Az én időmben is nagyszerű iskola volt, de ha lehet, még jobb lett. Örülök, hogy lányom is itt fog tanulni</p>
