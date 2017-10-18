@@ -1,0 +1,18 @@
+.swipey {
+  //display: flex;
+  width:100%;
+  overflow-x: scroll;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  @include breakpoint(large) {
+    overflow-x: hidden;
+  }
+}
+.swipey__inner {
+  @include clearfix();
+  width:980px;
+  @include breakpoint(large) {
+    width:100%;
+  }
+}

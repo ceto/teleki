@@ -4,7 +4,6 @@
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-
 <?php get_template_part( '/templates/breaking'); ?>
 <?php get_template_part('templates/page', 'header'); ?>
 <div class="ps ps--narrow ps--xlight ps--bordered">
@@ -16,30 +15,46 @@
                 </header>
                 <br>
                 <?php
-                    $the_galleries = new WP_Query( array(
-                    'posts_per_page'      => 4,
-                    'post_type' => array(post),
-                    'category__in' => array(6,8),
-                    'tax_query' => array(
-                        'relation' => 'AND',
-                        array(
-                            'taxonomy' => 'post_format',
-                            'field'    => 'slug',
-                            'terms'    => array( 'post-format-gallery' )
-                        )
-                    )
-                    ));
+                $the_galleries = new WP_Query( array(
+                'posts_per_page'      => 4,
+                'post_type' => array(post),
+                'category__in' => array(6,8),
+                'tax_query' => array(
+                'relation' => 'AND',
+                array(
+                'taxonomy' => 'post_format',
+                'field'    => 'slug',
+                'terms'    => array( 'post-format-gallery' )
+                )
+                )
+                ));
                 ?>
-                <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 large-up-4">
-                    <?php while ($the_galleries->have_posts() ) : $the_galleries->the_post(); ?>
-                    <?php setup_postdata( $post ); ?>
-                    <div class="cell">
-                        <?php get_template_part('templates/gallerycard' ); ?>
+            </div>
+        </div>
+    </div>
+    <div class="swipey">
+        <div class="swipey__inner">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                    <div class="large-12 cell">
+                        <div class="grid-x grid-margin-x grid-margin-y small-up-4 medium-up-4 tablet-up-4 large-up-4">
+                            <?php while ($the_galleries->have_posts() ) : $the_galleries->the_post(); ?>
+                            <?php setup_postdata( $post ); ?>
+                            <div class="cell">
+                                <?php get_template_part('templates/gallerycard' ); ?>
+                            </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </div>
                     </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
                 </div>
-                <br><br>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="large-12 cell">
+                <br>
                 <a href="#" class="readmore readmore--large">Mutasd az összes albumot</a>
             </div>
         </div>
@@ -54,20 +69,20 @@
                 </header>
                 <br><br>
                 <?php
-                    $the_news = new WP_Query( array(
-                    'posts_per_page'      => 3,
-                    'post_type' => array(post),
-                    'category__in' => array(6,8),
-                    'tax_query' => array(
-                        'relation' => 'AND',
-                        array(
-                            'taxonomy' => 'post_format',
-                            'field'    => 'slug',
-                            'terms'    => array( 'post-format-gallery' ),
-                            'operator' => 'NOT IN',
-                        )
-                    )
-                    ));
+                $the_news = new WP_Query( array(
+                'posts_per_page'      => 3,
+                'post_type' => array(post),
+                'category__in' => array(6,8),
+                'tax_query' => array(
+                'relation' => 'AND',
+                array(
+                'taxonomy' => 'post_format',
+                'field'    => 'slug',
+                'terms'    => array( 'post-format-gallery' ),
+                'operator' => 'NOT IN',
+                )
+                )
+                ));
                 ?>
                 <div class="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-3">
                     <?php while ($the_news->have_posts() ) : $the_news->the_post(); ?>
@@ -81,13 +96,7 @@
                 <br><br>
                 <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore readmore--large">Öszes bejegyzés böngészése</a>
             </div>
-
         </div>
     </div>
 </div>
-
-
-
-
-
 <?php endwhile; ?>
