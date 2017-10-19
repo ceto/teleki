@@ -1,4 +1,5 @@
 .gallerycard {
+    //margin-bottom: 2rem;
 
 }
 .gallerycard__fig {
@@ -10,9 +11,9 @@
 .gallerycard__header {
 }
 .gallerycard__title {
-    font-size: .875rem;
+    font-size: 1rem;
     margin:0 0 .125em;
-    @include breakpoint(large) {
+    @include breakpoint(xlarge) {
          font-size: 1.125rem;
     }
 

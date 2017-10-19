@@ -12,8 +12,8 @@
     cite {
         font-family: $body-font-family;
         font-weight: $global-weight-bold;
-        color:$warning-color;
-        //color:inherit;
+        //color:$warning-color;
+        color:inherit;
         font-size: .666em;
         &:before {
             display: none;

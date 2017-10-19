@@ -48,7 +48,13 @@ $stickyposts = new WP_Query( $args );
                     </div>
                     <?php endwhile; ?>
                 </div>
-                <?php the_posts_navigation(); ?>
+                <br><br>
+                <nav class="pagi">
+                <?php
+                    wp_reset_postdata();
+                    teleki_foundation_pagination();
+                ?>
+                </nav>
             </div>
         </div>
     </div>

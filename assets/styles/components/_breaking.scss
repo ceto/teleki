@@ -5,11 +5,18 @@
     background-color: $xxlight-gray;
 }
 .breaking {
-    font-size: 1.125rem;
+    @include clearfix();
+    font-size: .875rem;
     line-height: $paragraph-lineheight;
     padding:.25rem 0 0;
+    @include breakpoint('large') {
+        font-size: 1rem;
+    }
+    @include breakpoint('xxlarge') {
+        font-size: 1.125rem;
+    }
 
-    @include clearfix();
+
 }
 .breaking__label {
     font-size: 1em;

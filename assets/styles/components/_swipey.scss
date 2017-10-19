@@ -11,8 +11,8 @@
 }
 .swipey__inner {
   @include clearfix();
-  width:980px;
+  width:1140px;
   @include breakpoint(large) {
-    width:100%;
+    width:auto;
   }
 }

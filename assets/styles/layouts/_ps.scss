@@ -100,3 +100,14 @@
   background-color: $success-color;
   color: $white;
 }
+
+.ps--prigrad {
+  color: $white;
+  background-color: $primary-color;
+  background-image: url(../images/pattern-white20.png), linear-gradient(120deg, $primary-color 0, $secondary-color 40%, $secondary-color 60%, $primary-color 100% );
+  background-repeat: repeat, no-repeat;
+  background-size: 12rem auto, 100%;
+  border:1px solid $primary-color;
+  background-attachment: fixed, scroll;
+
+}

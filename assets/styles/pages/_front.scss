@@ -25,9 +25,4 @@
 }
 
 .front__bottom {
-    background-color: $primary-color;
-    background-image: url(../images/pattern-white20.png), linear-gradient(60deg, $primary-color 0, $secondary-color 20%, $secondary-color 80%, $primary-color 100% );
-    background-repeat: repeat, no-repeat;
-    background-size: 12rem auto, 100%;
-    border:1px solid $primary-color;
 }

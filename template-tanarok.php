@@ -7,7 +7,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <div class="grid-container">
     <div class="grid-x grid-margin-x align-center">
-            <div class="large-10 cell">
+        <div class="xlarge-10 cell">
             <header class="pagehead ps ps--narrow">
                 <h1 class="pagehead__title"><?= Titles\title(); ?></h1>
                 <div class="lead pagehead__lead"><?php the_excerpt(); ?></div>
@@ -15,27 +15,30 @@
         </div>
     </div>
 </div>
-
 <?php if ( have_rows('vezetoseg') ): ?>
 <div class="ps ps--xlight ps--narrow ps--bordered">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x align-center">
-            <div class="large-10 cell">
-                <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 tablet-up-4 large-up-4">
-                    <?php while( have_rows('vezetoseg') ): the_row(); ?>
-                    <div class="cell">
-                        <div class="membercard">
-                            <figure class="membercard__fig">
-                                <img src="//placehold.it/640x640/?text=portre" alt="<?= get_sub_field('nev') ?>">
-                            </figure>
-                            <h3 class="membercard__title"><?= get_sub_field('nev') ?></h3>
-                            <div class="membercard__titulus"><?= get_sub_field('beosztas') ?></div>
-                            <?php if (get_sub_field('tantargy')): ?>
-                            <div class="membercard__text"><?= get_sub_field('tantargy') ?></div>
-                            <?php endif ?>
+    <div class="swipey">
+        <div class="swipey__inner">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x align-center">
+                    <div class="xlarge-10 cell">
+                        <div class="grid-x grid-margin-x">
+                            <?php while( have_rows('vezetoseg') ): the_row(); ?>
+                            <div class="small-3 cell">
+                                <div class="membercard">
+                                    <figure class="membercard__fig">
+                                        <img src="//placehold.it/640x640/?text=portre" alt="<?= get_sub_field('nev') ?>">
+                                    </figure>
+                                    <h3 class="membercard__title"><?= get_sub_field('nev') ?></h3>
+                                    <div class="membercard__titulus"><?= get_sub_field('beosztas') ?></div>
+                                    <?php if (get_sub_field('tantargy')): ?>
+                                    <div class="membercard__text"><?= get_sub_field('tantargy') ?></div>
+                                    <?php endif ?>
+                                </div>
+                            </div>
+                            <?php endwhile; ?>
                         </div>
                     </div>
-                    <?php endwhile; ?>
                 </div>
             </div>
         </div>

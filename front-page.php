@@ -57,7 +57,7 @@
         </div>
     </div>
 </section>
-<section class="front__bottom ps ps--pricol">
+<section class="front__bottom ps ps--prigrad">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
             <div class="large-8 cell">

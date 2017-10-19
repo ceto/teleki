@@ -41,6 +41,6 @@
 
 // Text meant only for screen readers
 .screen-reader-text {
-  //@extend .show-for-sr;
+  @extend .show-for-sr;
   //@extend .sr-only-focusable;
 }

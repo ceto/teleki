@@ -35,18 +35,14 @@
     <div class="swipey">
         <div class="swipey__inner">
             <div class="grid-container">
-                <div class="grid-x grid-margin-x">
-                    <div class="large-12 cell">
-                        <div class="grid-x grid-margin-x grid-margin-y small-up-4 medium-up-4 tablet-up-4 large-up-4">
-                            <?php while ($the_galleries->have_posts() ) : $the_galleries->the_post(); ?>
-                            <?php setup_postdata( $post ); ?>
-                            <div class="cell">
-                                <?php get_template_part('templates/gallerycard' ); ?>
-                            </div>
-                            <?php endwhile; ?>
-                            <?php wp_reset_postdata(); ?>
-                        </div>
+                <div class="grid-x grid-margin-x grid-padding-y">
+                    <?php while ($the_galleries->have_posts() ) : $the_galleries->the_post(); ?>
+                    <?php setup_postdata( $post ); ?>
+                    <div class="small-3 cell">
+                        <?php get_template_part('templates/gallerycard' ); ?>
                     </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
@@ -54,8 +50,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-12 cell">
-                <br>
-                <a href="#" class="readmore readmore--large">Mutasd az összes albumot</a>
+                <a href="<?php the_permalink( 18 ) ?>" class="readmore readmore--large">Mutasd az összes albumot</a>
             </div>
         </div>
     </div>
