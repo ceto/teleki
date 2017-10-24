@@ -9,8 +9,7 @@
   "dependencies": {
     "foundation-sites": "^6.4.3",
     "motion-ui": "^1.2.3",
-    "photoswipe": "^4.1.2",
-    "instafeed.js": "^1.4.1"
+    "photoswipe": "^4.1.2"
   },
   "overrides": {
     "motion-ui": {
