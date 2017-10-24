@@ -4,7 +4,8 @@
         <figure class="kepzeshead__fig">
             <div class="kepzeshead__imgwrap">
                 <?php if ( get_field('fejleckep') ) :?>
-                    <img class="kepzeshead__img" src="<?= get_field('fejleckep')  ?>" alt="<?php the_title(); ?>">
+                    <?php $image =  get_field('fejleckep'); s?>
+                    <?= wp_get_attachment_image( $image[ID], 'full' ) ?>
                 <?php else: ?>
                     <img class="kepzeshead__img" src="<?= get_stylesheet_directory_uri().'/dist/images/nyitolap-stolen.jpg' ?>" alt="<?php the_title(); ?>">
                 <?php endif; ?>
@@ -24,7 +25,7 @@
             </div>
         </div>
     </header>
-    <div class="grid-container">
+    <div id="sthelper" class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-8 cell">
                 <div class="ps ps--narrow">
@@ -32,7 +33,7 @@
                     <div class="kepzes__content">
                         <?php the_content(); ?>
                     </div>
-                    <footer class="kepzes__footer">
+                    <footer class="post__footer">
                         <?php
                         $the_cageposts = new WP_Query( array(
                         'posts_per_page'      => 4,
@@ -56,8 +57,8 @@
                     <?php comments_template('/templates/comments.php'); ?>
                 </div>
             </div>
-            <div class="large-4 cell kepzes__navcell">
-                <div class="ps ps--narrow">
+            <div class="large-4 cell kepzes__navcell" data-sticky-container>
+                <div class="ps ps--narrow sticky" data-sticky data-sticky-on="large" data-top-anchor="sthelper:top" data-btm-anchor="sthelper:bottom" data-options="marginTop:0;">
                     <?php get_template_part( 'templates/recommend' ) ?>
                     <nav class="kepzes__nav">
                         <h3 class="widget__title">Válassz szakképzést</h3>

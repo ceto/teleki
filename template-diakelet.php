@@ -13,7 +13,6 @@
                 <header class="pagehead">
                     <h2 class="pagehead__title"><small>Életképek a Telekiből</small>Fotóalbumok</h2>
                 </header>
-                <br>
                 <?php
                 $the_galleries = new WP_Query( array(
                 'posts_per_page'      => 4,

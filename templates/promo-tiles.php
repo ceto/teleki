@@ -3,7 +3,8 @@
     <div class="promotile promotile--large">
         <figure class="promotile__bgimage">
             <a href="<?php the_permalink($target->ID); ?>">
-                <img src="<?= get_field('image_1'); ?>" alt="">
+                <?php $image =  get_field('image_1'); s?>
+                <?= wp_get_attachment_image( $image[ID], 'full' ) ?>
             </a>
         </figure>
         <div class="promotile__inner">
@@ -19,7 +20,8 @@
     <div class="promotile">
         <figure class="promotile__bgimage">
             <a href="<?php the_permalink($target->ID); ?>">
-                <img src="<?= get_field('image_2'); ?>" alt="">
+                <?php $image =  get_field('image_2'); s?>
+                <?= wp_get_attachment_image( $image[ID], 'large' ) ?>
             </a>
         </figure>
         <div class="promotile__inner">
@@ -34,7 +36,8 @@
     <div class="promotile">
         <figure class="promotile__bgimage">
             <a href="<?php the_permalink($target->ID); ?>">
-                <img src="<?= get_field('image_3'); ?>" alt="">
+                <?php $image =  get_field('image_3'); s?>
+                <?= wp_get_attachment_image( $image[ID], 'large' ) ?>
             </a>
         </figure>
         <div class="promotile__inner">

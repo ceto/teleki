@@ -14,8 +14,10 @@
     color: $white;
     border-radius: 1.5em;
     background-color: $alert-color;
-    &:hover, &:focus {
+    outline: none;
+    &:hover {
         background-color: $warning-color;
         color:$white;
+
     }
 }

@@ -12,7 +12,6 @@
                 <header class="pagehead">
                     <h1 class="pagehead__title"><small>Életképek a Telekiből</small><?php the_title(); ?></h1>
                 </header>
-                <br>
                 <?php
                 $the_galleries = new WP_Query( array(
                 'posts_per_page'      => -1,

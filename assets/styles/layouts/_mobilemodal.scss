@@ -1,22 +1,38 @@
 .mobilemodal {
-    padding:1rem 5% 1rem;
+    padding:1rem 10% 1rem;
     background-color: $primary-color;
     background-image: linear-gradient(135deg, $primary-color 50%, $secondary-color);
     color:$white;
     text-align: center;
+    height: 100%;
+    min-height: auto;
 
     p {
         font-size: .875rem;
     }
 
+    .close-button {
+        font-size: 3em;
+        color:$alert-color;
+    }
+
+}
+
+.mobilemodal__brand {
+    display: block;
+    width:4rem;
+    margin:1.5rem auto 1rem;
 }
 .mobilemodal__mainnav {
-    margin: 2rem 0;
+    margin: 0 0;
 }
 
 .mobilemodal__studentnav {
-    margin: 2rem 0;
-    padding:2rem 0 0;
+    margin: 1.5rem 0;
+    padding:1.5rem 0 0;
     border-top:1px solid rgba($white,.25);
 
+}
+.mobilemodal__enaplo {
+    margin-bottom: 0;
 }

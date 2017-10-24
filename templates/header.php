@@ -21,9 +21,9 @@
             <div class="auto cell">
                 <div class="banner__branding">
                     <a class="brand" href="<?= esc_url(home_url('/')); ?>">
-                        <img class="brand__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logo-small.png" alt="<?php bloginfo('name'); ?>">
+                        <img class="brand__logo" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/logo.svg" alt="<?php bloginfo('name'); ?>">
                         <span class="brand__name"><span>BGSZC </span>Teleki</span>
-                        <span class="brand__descr">A Budapesti Gazdasági Szakképzési Centrum Szakgimnáziuma</span>
+                        <span class="brand__descr">Közgazdasági Szakgimnázium, Budapest</span>
                     </a>
                 </div>
             </div>

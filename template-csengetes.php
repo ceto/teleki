@@ -63,7 +63,7 @@
                 </table>
             </div>
             <div class="cell tablet-6 large-5">
-                <h2 class="stabtabletitle">Röviditett órák</h2>
+                <h2 class="stabtabletitle">Rövidített órák</h2>
                 <table>
                     <thead>
                         <tr>

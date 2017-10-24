@@ -35,7 +35,6 @@
                     'post__not_in'            => array(get_the_id()),
                     'ignore_sticky_posts' => 1,
                     )); ?>
-                    <hr>
                     <section class="widget widget--sidebar">
                         <h3 class="widget__title">Kapcsolódó tartalmak és aktualitások</h3>
                         <div class="widget__body">

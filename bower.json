@@ -8,13 +8,22 @@
   "private": true,
   "dependencies": {
     "foundation-sites": "^6.4.3",
-    "motion-ui": "^1.2.3"
+    "motion-ui": "^1.2.3",
+    "photoswipe": "^4.1.2",
+    "instafeed.js": "^1.4.1"
   },
   "overrides": {
     "motion-ui": {
       "main": [
         "dist/motion-ui.js",
         "src/motion-ui.scss"
+      ]
+    },
+    "photoswipe": {
+      "main": [
+        "dist/photoswipe.js",
+        "dist/photoswipe-ui-default.js",
+        "src/css/main.scss"
       ]
     }
   }

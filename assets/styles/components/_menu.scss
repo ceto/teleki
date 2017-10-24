@@ -92,7 +92,7 @@
     font-weight: $global-weight-bold;
     a {
         text-transforrm: capitalize;
-        font-size: 1.666rem;
+        font-size: 1.5rem;
         padding: .5em 0;
         color:$white;
     }
@@ -112,6 +112,14 @@
             padding: .5em 0;
         }
     }
+
+    &.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a:after {
+        border-color: $white transparent transparent;
+        //right:0;
+        //border: 12px inset;
+    }
+
+
 }
 
 .menu--student {
@@ -160,7 +168,7 @@
     }
     a {
         text-transform: uppercase;
-        font-size: .875rem;
+        font-size: .75rem;
         padding: .125em 0;
         margin:.25em 0;
         color: $white;

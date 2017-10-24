@@ -34,16 +34,19 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="large-12 cell">
-                        <div class="grid-thumbs grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3 tablet-up-4 large-up-5 xlarge-up-6 align-middle">
+                        <div class="psgallery grid-thumbs grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3 tablet-up-4 large-up-5 xlarge-up-6 align-middle" itemscope itemtype="http://schema.org/ImageGallery">
                             <?php foreach( $gallery as $image ): ?>
-                            <div class="cell">
-                                <a href="<?= $image['url'] ?>" class="thumbnail"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></a>
-                            </div>
+                            <figure class="cell psgallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<?= $image['url'] ?>" class="thumbnail" itemprop="contentUrl" data-size="<?= $image['width'] ?>x<?= $image['height'] ?>" data-caption="<?= $image['caption'] ?>" data-title="<?= get_the_title() ?>">
+                                    <?php echo wp_get_attachment_image( $image['ID'], 'medium', false, 'itemprop="thumbnail"'  ); ?>
+                                </a>
+                            </figure>
                             <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <?php get_template_part( 'templates/photoswipedom'); ?>
     <?php endif; ?>
 </article>

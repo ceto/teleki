@@ -71,11 +71,11 @@
                                 <svg class="icon"><use xlink:href="#icon-arrow-thin-right"></use></svg>
                             </button>
                         </div> -->
-                                            <nav class="orbit-bullets">
-                        <button class="is-active" data-slide="0"></button>
-                        <button data-slide="1"></button>
-                        <button data-slide="2"></button>
-                    </nav>
+                        <nav class="orbit-bullets">
+                            <button class="is-active" data-slide="0"></button>
+                            <button data-slide="1"></button>
+                            <button data-slide="2"></button>
+                        </nav>
                         <ul class="orbit-container">
                             <li class="orbit-slide is-active">
                                 <div>
