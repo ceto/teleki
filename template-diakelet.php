@@ -49,7 +49,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-12 cell">
-                <a href="<?php the_permalink( 18 ) ?>" class="readmore readmore--large">Mutasd az összes albumot</a>
+                <a href="<?php the_permalink( 18 ) ?>" class="readmore">Mutasd az összes albumot</a>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
                     <?php wp_reset_postdata(); ?>
                 </div>
                 <br><br>
-                <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore readmore--large">Öszes bejegyzés böngészése</a>
+                <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore readmore">Öszes bejegyzés böngészése</a>
             </div>
         </div>
     </div>

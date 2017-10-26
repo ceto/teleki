@@ -94,13 +94,13 @@
         text-transforrm: capitalize;
         font-size: 1.5rem;
         padding: .5em 0;
-        color:$white;
+        //color:$white;
     }
 
     .is-active {
         > a {
             background-color: transparent;
-            color: $white;
+            color: $primary-color;
             text-decoration: underline;
         }
     }
@@ -114,7 +114,7 @@
     }
 
     &.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a:after {
-        border-color: $white transparent transparent;
+        border-color: $alert-color transparent transparent;
         //right:0;
         //border: 12px inset;
     }
@@ -171,16 +171,17 @@
         font-size: .75rem;
         padding: .125em 0;
         margin:.25em 0;
-        color: $white;
+        //color: $white;
         display: inline-block;
         &:hover, &:focus {
-            color:$warning-color;
+            //color:$warning-color;
         }
     }
 
     .is-active {
         > a {
-            color: $warning-color;
+            color: $alert-color;
+            background-color: transparent;
         }
     }
 }

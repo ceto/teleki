@@ -9,6 +9,7 @@
 .kepzescard__ill {
     width:25%;
     float:left;
+    max-width: 8rem;
 
     a {
         display: block;
@@ -26,9 +27,6 @@
         border: .25rem solid #fff;
         border-radius: 50%;
         display: block;
-
-
-
     }
 }
 .kepzescard__body {
@@ -42,7 +40,7 @@
     font-size: 1.25rem;
     margin:0 0 .125em;
     @include breakpoint(large) {
-         font-size: 1.5rem;
+         //font-size: 1.5rem;
     }
 
     a {

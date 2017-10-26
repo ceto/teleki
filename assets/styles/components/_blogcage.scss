@@ -11,6 +11,18 @@
 
 }
 
+.blogcage__label {
+    //display:none;
+    margin-right: -.25em;
+    line-height: 1;
+    display: inline-block;
+    color:$primary-color;
+    svg {
+        font-size: .875em;
+        transform: translateY(.125em);
+    }
+}
+
 .blogcage__title {
     font-size: 1em;
     float:left;

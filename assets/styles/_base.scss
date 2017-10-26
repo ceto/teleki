@@ -60,7 +60,12 @@ html {
 .readmore--large {
     font-size: .875rem;
 }
-
+.readmore--light {
+    color:$white;
+    &:hover, &:focus {
+        color:$alert-color;
+    }
+}
 .button {
     //font-family: $header-font-family;
     font-weight: $global-weight-bold;

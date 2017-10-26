@@ -11,19 +11,19 @@
 .membercard__header {
 }
 .membercard__title {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin:1.25em 0 0;
     line-height: 1.2;
     @include breakpoint(large) {
          font-size: 1.125rem;
     }
     @include breakpoint(xxlarge) {
-         font-size: 1.333rem;
+         font-size: 1.25rem;
     }
 }
 .membercard__titulus {
     margin:0;
-    font-size: 1rem;
+    font-size: .875rem;
     line-height: 1.2;
     //font-weight: $global-weight-bold;
     //text-decoration: underline;
@@ -31,7 +31,7 @@
 }
 
 .membercard__text {
-    font-size: .875rem;
+    font-size: .75rem;
     margin:.75em 0 .5em 0;
     font-style: italic;
 }

@@ -34,14 +34,19 @@
     //font-family: $body-font-family;
     text-transform: uppercase;
     display: inline-block;
-    margin-right: -.5em;
-    &:after {
-        content:':';
+    margin-right: -.333em;
+    line-height: 1;
+    svg {
+        font-size: 1.125em;
+        transform: translateY(.125em);
     }
 }
 
 .postcard__label--featured {
     color:$alert-color;
+}
+.postcard__label--gallery {
+    color:$primary-color;
 }
 .postcard__meta {
     font-size: .875rem;

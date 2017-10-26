@@ -1,14 +1,18 @@
 .page-template-template-dokumentumok {
     .widget--dlcage {
+        margin-top:2rem;
+        padding-top:2rem;
+        border-top:1px solid $xlight-gray;
         .dlcage {
             @include breakpoint(xlarge) {
-                font-size: 1.125rem;
+                font-size: 1rem;
             }
         }
 
         .widget__title {
+            margin-bottom:1em;
             @include breakpoint(xlarge) {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
 
         }

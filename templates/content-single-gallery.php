@@ -23,6 +23,9 @@
                         </div>
                     <?php endif; ?>
                 </div>
+                <div class="large-3 xxlarge-4 cell">
+                    <?php //get_template_part('templates/recommend') ?>
+                </div>
             </div>
         </div>
     </header>
@@ -30,7 +33,7 @@
         $gallery = get_field('gallery');
         $size = 'medium'; // (thumbnail, medium, large, full or custom size)
         if( $gallery ): ?>
-        <div class="ps ps--prigrad">
+        <section class="ps ps--prigrad gallerysection">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="large-12 cell">
@@ -38,15 +41,16 @@
                             <?php foreach( $gallery as $image ): ?>
                             <figure class="cell psgallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                 <a href="<?= $image['url'] ?>" class="thumbnail" itemprop="contentUrl" data-size="<?= $image['width'] ?>x<?= $image['height'] ?>" data-caption="<?= $image['caption'] ?>" data-title="<?= get_the_title() ?>">
-                                    <?php echo wp_get_attachment_image( $image['ID'], 'medium', false, 'itemprop="thumbnail"'  ); ?>
+                                    <?php echo wp_get_attachment_image( $image['ID'], 'thumbnail', false, 'itemprop="thumbnail"'  ); ?>
                                 </a>
                             </figure>
                             <?php endforeach; ?>
                         </div>
+                        <a class="readmore readmore--light" href="<?php the_permalink( 18 ) ?>">Még több fotóalbum itt</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <?php get_template_part( 'templates/photoswipedom'); ?>
     <?php endif; ?>
 </article>

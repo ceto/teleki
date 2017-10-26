@@ -5,11 +5,13 @@
     }
 }
 .testimonial {
+    @include clearfix();
     border-left:none;
     padding:0;
     margin: 0;
 
     cite {
+        display: block;
         font-family: $body-font-family;
         font-weight: $global-weight-bold;
         //color:$warning-color;

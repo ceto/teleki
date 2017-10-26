@@ -1,7 +1,12 @@
 <article <?php post_class('gallerycard'); ?>>
   <figure class="gallerycard__fig">
     <a class="thumbnail" href="<?php the_permalink(); ?>">
-      <img src="//lorempixel.com/800/600/" alt="">
+      <?php if (has_post_thumbnail()): ?>
+        <?php the_post_thumbnail( medium ) ?>
+      <?php else: ?>
+          <img src="//placehold.it/480x320/" alt="">
+      <?php endif ?>
+
     </a>
   </figure>
   <header class="gallerycard__header">

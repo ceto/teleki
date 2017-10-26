@@ -5,43 +5,43 @@
 ?>
 <?php use Roots\Sage\Titles; ?>
 <?php while (have_posts()) : the_post(); ?>
-<div class="grid-container">
-    <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-            <header class="pagehead ps ps--narrow">
-                <h1><?= Titles\title(); ?></h1>
-                <div class="lead pagehead__lead"><?php the_excerpt(); ?></div>
-            </header>
+<div class="ps">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="large-12 cell">
+                <header class="pagehead">
+                    <h1><?= Titles\title(); ?></h1>
+                    <div class="lead pagehead__lead"><?php the_excerpt(); ?></div>
+                </header>
+                <?php //the_content(); ?>
+            </div>
         </div>
     </div>
-    <div class="grid-x grid-margin-x align-center">
-        <div class="cell xlarge-10">
-            <?php
-            $the_kepzesek = new WP_Query( array(
-            'posts_per_page'      => -1,
-            'post_type' => array(kepzes),
-            'orderby' => 'menu_order',
-            'order' => 'ASC'
-            ));
-            ?>
-            <div class="grid-x grid-margin-x grid-margin-y tablet-up-2 large-up-2">
-                <?php while ($the_kepzesek->have_posts() ) : $the_kepzesek->the_post(); ?>
-                <?php setup_postdata( $post ); ?>
-                <div class="cell">
-                    <?php get_template_part('templates/kepzescard' ); ?>
+</div>
+<div class="ps ps--notop">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell axxlarge-10">
+                <?php
+                $the_kepzesek = new WP_Query( array(
+                'posts_per_page'      => -1,
+                'post_type' => array(kepzes),
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
+                ));
+                ?>
+                <div class="grid-x grid-margin-x grid-margin-y tablet-up-2 large-up-2 xxlarge-up-3">
+                    <?php while ($the_kepzesek->have_posts() ) : $the_kepzesek->the_post(); ?>
+                    <?php setup_postdata( $post ); ?>
+                    <div class="cell">
+                        <?php get_template_part('templates/kepzescard' ); ?>
+                    </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
             </div>
         </div>
-    </div>
-    <div class="grid-x grid-margin-x">
-        <div class="large-8 cell">
-            <div class="ps">
-                <?php the_content(); ?>
-            </div>
 
-        </div>
     </div>
 </div>
 <section class="ps ps--narrow ps--xlight ps--bordered">

@@ -61,49 +61,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
             <div class="large-8 cell">
-                <div class="orbit" role="region" aria-label="Rólunk mondták" data-orbit>
-                    <div class="orbit-wrapper">
-                        <!-- <div class="orbit-controls">
-                            <button class="orbit-previous">
-                                <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
-                            </button>
-                            <button class="orbit-next">
-                                <svg class="icon"><use xlink:href="#icon-arrow-thin-right"></use></svg>
-                            </button>
-                        </div> -->
-                        <nav class="orbit-bullets">
-                            <button class="is-active" data-slide="0"></button>
-                            <button data-slide="1"></button>
-                            <button data-slide="2"></button>
-                        </nav>
-                        <ul class="orbit-container">
-                            <li class="orbit-slide is-active">
-                                <div>
-                                    <blockquote class="testimonial">
-                                        <p>Nagy öröm volt ma szülőként meglátogatni az az iskolát, ahol 19 éve végeztem. Az én időmben is nagyszerű iskola volt, de ha lehet, még jobb lett. Örülök, hogy lányom is itt fog tanulni</p>
-                                        <cite>Esther Volek, CEO @ Microsoft Hungary</cite>
-                                    </blockquote>
-                                </div>
-                            </li>
-                            <li class="orbit-slide">
-                                <div>
-                                    <blockquote class="testimonial">
-                                        <p>Nagyon nagy öröm volt ma szülőként meglátogatni az az iskolát, ahol 19 éve végeztem. Az én időmben is nagyszerű iskola volt, de ha lehet, még jobb lett. Örülök, hogy lányom is itt fog tanulni</p>
-                                        <cite>Sándor Pál, filmrendező</cite>
-                                    </blockquote>
-                                </div>
-                            </li>
-                            <li class="orbit-slide">
-                                <div>
-                                    <blockquote class="testimonial">
-                                        <p>Nagy öröm volt ma szülőként meglátogatni az az iskolát, ahol 19 éve végeztem. Az én időmben is nagyszerű iskola volt, de ha lehet, még jobb lett. Örülök, hogy lányom is itt fog tanulni</p>
-                                        <cite>Esther Volek, CEO @ Microsoft Hungary</cite>
-                                    </blockquote>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <?php get_template_part('templates/testimonials'); ?>
             </div>
         </div>
     </div>

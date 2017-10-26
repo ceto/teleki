@@ -5,22 +5,23 @@
 ?>
 <?php use Roots\Sage\Titles; ?>
 <?php while (have_posts()) : the_post(); ?>
-<div class="grid-container">
-    <div class="grid-x grid-margin-x">
-            <div class="cell large-10">
-            <header class="pagehead ps ps--narrow">
-                <h1 class="pagehead__title"><?= Titles\title(); ?></h1>
-                <div class="lead pagehead__lead">
-                    <?php the_excerpt(); ?>
-
+<div class="ps">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+                <div class="cell large-8">
+                <header class="pagehead">
+                    <h1 class="pagehead__title"><?= Titles\title(); ?></h1>
+                    <div class="lead pagehead__lead">
+                        <?php the_excerpt(); ?>
                     </div>
+                </header>
                 <p><a target="_blank" href="https://calendar.google.com/calendar/embed?src=hu.hungarian%23holiday%40group.v.calendar.google.com&ctz=Europe/Budapest" class="button small">Új ablakba</a> <a href="https://calendar.google.com/calendar/ical/hu.hungarian%23holiday%40group.v.calendar.google.com/public/basic.ics" class="button small">iCal</a></p>
-            </header>
 
+            </div>
         </div>
     </div>
 </div>
-<div class="ps ps--xlight ps--narrow ps--bordered">
+<div class="ps ps--xlight ps--bordered">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
             <div class="cell">
