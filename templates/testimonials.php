@@ -23,7 +23,7 @@
             <button class="is-active" data-slide="0"></button>
             <?php for ($i=1; $i < $tc; $i++) : ?>
             <button data-slide="<?= $i ?>"></button>
-            <? endfor; ?>
+            <?php endfor; ?>
         </nav>
         <ul id="test-eq" class="orbit-container">
             <?php $iter=0; while ($the_testimonials->have_posts() ) : $the_testimonials->the_post();  ?>
@@ -36,8 +36,7 @@
                         </blockquote>
                     </div>
                 </li>
-            <?php $iter++; ?>
-            <<?php endwhile; ?>
+            <?php $iter++; endwhile; ?>
             <?php wp_reset_postdata(); ?>
         </ul>
     </div>
