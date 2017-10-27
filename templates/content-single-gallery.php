@@ -37,7 +37,7 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="large-12 cell">
-                        <div class="psgallery grid-thumbs grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3 tablet-up-4 large-up-5 xlarge-up-6 align-middle" itemscope itemtype="http://schema.org/ImageGallery">
+                        <div class="psgallery grid-thumbs grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3 tablet-up-4 large-up-5 xlarge-up-6" itemscope itemtype="http://schema.org/ImageGallery">
                             <?php foreach( $gallery as $image ): ?>
                             <figure class="cell psgallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                 <a href="<?= $image['url'] ?>" class="thumbnail" itemprop="contentUrl" data-size="<?= $image['width'] ?>x<?= $image['height'] ?>" data-caption="<?= $image['caption'] ?>" data-title="<?= get_the_title() ?>">

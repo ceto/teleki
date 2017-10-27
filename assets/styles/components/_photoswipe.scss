@@ -10,7 +10,28 @@
             image-rendering: -webkit-optimize-contrast;
         }
     }
+}
 
+.psgallery--incontent {
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.psgallery__item {
+
+    figcaption {
+        font-size: .75rem;
+        line-height: $header-lineheight;
+        text-align: center;
+        padding: .75em 6% 0;
+        font-family: $header-font-family;
+        font-weight: $global-weight-bold;
+        color:$dark-gray;
+    }
+}
+
+.psgallery__item--hasbtmmargin {
+    margin-bottom: 1rem;
 }
 
 /*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
