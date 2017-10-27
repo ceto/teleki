@@ -1,5 +1,5 @@
 <?php
-        $the_testimonials = new WP_Query( array(
+    $the_testimonials = new WP_Query( array(
         'posts_per_page'      => -1,
         'post_type' => array(testimonial),
         'orderby' => 'menu_order',
@@ -36,7 +36,8 @@
                         </blockquote>
                     </div>
                 </li>
-            <?php $iter++; endwhile; ?>
+            <?php $iter++; ?>
+            <<?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         </ul>
     </div>
