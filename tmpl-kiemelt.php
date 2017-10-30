@@ -21,7 +21,7 @@
                 <div class="cell">
                     <div class="kepzeshead__content">
                         <?php if ($okjnum=get_field('okjszam')) :  ?>
-                        <p class="kepzeshead__okjnum"><small>OKJ szám:</small> <?= $okjnum ?></p>
+                        <p class="kepzeshead__okjnum"><small>OM azonosító:</small> <?= $okjnum ?></p>
                         <?php endif; ?>
                         <h1 class="kepzeshead__title"><?php the_title(); ?></h1>
                         <p class="kepzeshead__kivonat"><?= get_field('kivonat') ?></p>

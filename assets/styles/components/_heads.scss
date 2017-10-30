@@ -84,6 +84,10 @@
     margin:0 auto;
     background-color: $primary-color;
     background-image: linear-gradient(60deg, $primary-color, $secondary-color);
+    .page-template-tmpl-kepzesek & {
+        background-color: $success-color;
+        background-image: linear-gradient(60deg, $success-color, $primary-color);
+    }
     .page-template-tmpl-kiemelt & {
         background-color: $alert-color;
         background-image: linear-gradient(60deg, $alert-color, $warning-color);
