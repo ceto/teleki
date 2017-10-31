@@ -16,7 +16,7 @@
 
 .sitefooter__main {
     padding-top: 1.5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 1.5rem;
     font-size: .75rem;
     //color:$dark-gray;
     a {
@@ -28,9 +28,9 @@
 
 
 
-    @include breakpoint(large) {
+    @include breakpoint(tablet) {
         //padding-top: 8vh;
-        //padding-bottom: 5vh;
+        //padding-bottom: 1.5rem;
     }
 
 }
@@ -61,14 +61,15 @@
     line-height: 1 ;
     font-size: 1em;
     display: inline-block;
-    transform: scale(1.333) translateY(.125em);
+    transform: scale(1.333) translateY(.0875em);
 }
 
 .ficonized {
     padding-left: 3.5em;
     position: relative;
     display: inline-block;
-    //margin-bottom: 2em;
+    margin:0 auto;
+    text-align: left;
     .icon {
         position: absolute;
         left:0; top:0;
@@ -78,16 +79,14 @@
 }
 
 .fcopy {
-    margin-top: .75rem;
-    margin-bottom:.75rem;
-    text-align: center;
+    margin-top: 1.5rem;
+    //text-align: center;
     p {
         margin:0;
     }
-    @include breakpoint(tablet) {
+    @include breakpoint(large) {
         margin-top: 0;
-        margin-bottom: 0;
-        text-align: right;
+        //text-align: right;
     }
 }
 
