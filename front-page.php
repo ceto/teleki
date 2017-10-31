@@ -9,8 +9,8 @@
                 <div class="ps ps--narrow ps--nobottom">
                     <header class="pagehead">
                         <h1 class="pagehead__title"><small>Budapesti Gazdasági Szakképzési Centrum</small>Teleki Blanka Közgazdasági Szakgimnázium</h1>
-                        <div class="lead pagehead__lead"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo perspiciatis, similique sint eius officiis dolorem quo obcaecati in labore deleniti ipsa atque facere debitis, aperiam tenetur amet voluptates sunt magnam.</p></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni, placeat amet quam odio a aliquid natus itaque voluptatibus et molestiae eveniet debitis nam, corporis delectus at facere. Suscipit, molestiae.</p>
+                        <div class="lead pagehead__lead"><p>Állami fenntartású intézményünkben, hagyományos iskolai rendszerű képzés folyik. Szakgimnáziumi és szakképző osztályaink közgazdasági és kereskedelmi szakképesítést tanulnak.</p></div>
+                        <p>Közel száz éves iskolánk a <abbr title="Budapesti Gazdasági Szakképzési Centrum">BGSZC</abbr> kiemelt tagintézménye.  A modern szellemiség, jó felszereltség és kiváló szakmai gárda jó alapot nyújt a nálunk tanuló diákok jövőjének megalapozásában.</p>
                         <p><a href="<?php the_permalink(12); ?>" class="readmore">Tudj meg többet iskolánkról</a></p>
                     </header>
                 </div>
@@ -18,14 +18,14 @@
                     <div class="tablet-6 large-6 cell">
                         <div class="ps ps--narrow ps--nobottom">
                             <h4>Szakgimnázium</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
+                            <p>A 9-12 évfolyamon nappali rendszerű szakgimnáziumi képzés keretein belül az érettségire felkészítés mellett ilyen és ilyen szakirányú tantárgyakat tanítunk. Elvégzésével kap még valmi szakmát és ez meg ez van vagy micsoda ez ti tudjátok.</p>
                             <p><a href="<?php the_permalink(157); ?>" class="readmore">Szakgimnáziumi képzés bemutatása</a></p>
                         </div>
                     </div>
                     <div class="tablet-6 large-6 cell">
                         <div class="ps ps--narrow ps--nobottom">
                             <h4>Felnőtt képzés</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi, iste assumenda modi dolore vel expedita dolorum itaque iure perspiciatis sapiente soluta rem eum distinctio ipsum pariatur. Illum cumque, consequatur.</p>
+                            <p>Középfokú OKJ-s végzettséget adó szakmai képzéseinkre azon fiatalok jelentkezését várjuk akik nem nyertek felvételt a felsőoktatásba és/vagy esélyt szeretnének kapni jövőbeli elképzeléseik megvalósításához. A szakmák elsajátítása ingyenes.</p>
                             <p><a href="<?php the_permalink(6); ?>" class="readmore">Ingyenes OKJ képzések</a></p>
                         </div>
                     </div>
