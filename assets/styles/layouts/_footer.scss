@@ -1,6 +1,6 @@
 .sitefooter {
   border-top: 1px solid $xlight-gray;
-  //background-color: #fff;
+  background-color: $xxlight-gray;
   //background-image: url(../images/nyitolap-stolen.jpg);
   //background-repeat: no-repeat;
   //background-size: 100% auto;
@@ -15,9 +15,9 @@
 }
 
 .sitefooter__main {
-    padding-top: 3.75rem;
-    padding-bottom: 2.5rem;
-    font-size: .875rem;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    font-size: .75rem;
     //color:$dark-gray;
     a {
         color:inherit;
@@ -58,15 +58,16 @@
 
 .fsocial {
     //position: absolute;
-    line-height: 1;
-    font-size: 1.5em;
+    line-height: 1 ;
+    font-size: 1em;
     display: inline-block;
-    transform: translateY(.2em);
+    transform: scale(1.333) translateY(.125em);
 }
 
 .ficonized {
     padding-left: 3.5em;
     position: relative;
+    display: inline-block;
     //margin-bottom: 2em;
     .icon {
         position: absolute;
@@ -74,4 +75,23 @@
         font-size: 2.875em;
         display: inline-block;
     }
+}
+
+.fcopy {
+    margin-top: .75rem;
+    margin-bottom:.75rem;
+    text-align: center;
+    p {
+        margin:0;
+    }
+    @include breakpoint(tablet) {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: right;
+    }
+}
+
+.fupper {
+    //font-size: .75rem;
+    text-transform: uppercase;
 }
