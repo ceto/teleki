@@ -23,15 +23,16 @@
         }
         &.is-dropdown-submenu-parent>a:after,
         &.is-dropdown-submenu-parent>a:after {
-            margin-top:0;
+            margin-top:.125em;
+            right:.4em;
         }
     }
     a {
         font-size: 1.25rem;
-        padding: .75em 1rem .25em;
+        padding: .75em .875rem .25em;
         //color:inherit;
         @include breakpoint('xlarge') {
-            font-size: 1.333rem;
+            //font-size: 1.333rem;
         }
     }
 
@@ -190,7 +191,7 @@
 .menu--side {
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     > li {
         &:not(:last-child) {
             margin-bottom: .125rem;

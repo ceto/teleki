@@ -13,13 +13,14 @@
         font-size: 1rem;
     }
     @include breakpoint('xxlarge') {
-        font-size: 1.125rem;
+        //font-size: 1.125rem;
     }
 
 
 }
 .breaking__label {
-    font-size: 1em;
+    font-family: $body-font-family;
+    font-size: .875em;
     //font-weight: $global-weight-bold;
     //line-height: inherit;
 

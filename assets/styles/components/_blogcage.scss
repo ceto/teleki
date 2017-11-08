@@ -6,14 +6,14 @@
 
 .blogcage__item {
     @include clearfix;
-    margin:0 0 .4em;
+    margin:0 0 .5em;
     font-size: 1rem;
 
 }
 
 .blogcage__label {
     //display:none;
-    margin-right: -.25em;
+    //margin-right: -.25em;
     line-height: 1;
     display: inline-block;
     color:$primary-color;
@@ -39,7 +39,7 @@
 }
 
 .blogcage__updated {
-    padding-top: .25em;
+    padding-top: .333em;
     line-height: $header-lineheight;
     float:left;
     display: block;

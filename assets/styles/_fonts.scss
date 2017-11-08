@@ -1,2 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Lekton:400,700|Open+Sans:400,400i,700&subset=latin-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&subset=latin-ext');
+@font-face {
+    font-family: 'Museo';
+    src:  url('../fonts/Museo300-Regular.woff2') format('woff2'),
+        url('../fonts/Museo300-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo';
+    src:  url('../fonts/Museo500-Regular.woff2') format('woff2'),
+        url('../fonts/Museo500-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo';
+    src:  url('../fonts/Museo700-Regular.woff2') format('woff2'),
+        url('../fonts/Museo700-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
