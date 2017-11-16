@@ -39,52 +39,54 @@
                     <h1 class="pagehead__title"><?= Titles\title(); ?></h1>
                     <div class="lead pagehead__lead"><?php the_excerpt(); ?></div>
                 </header>
-                <?php the_content(); ?>
-                <?php if ( have_rows('tanarok') ): ?>
-                <h2 class="stabtabletitle">Tanárok</h2>
-                <table class="stabtable hover unstriped">
-                    <thead>
-                        <tr>
-                            <th>Név</th>
-                            <th>Tantárgy</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php while( have_rows('tanarok') ): the_row(); ?>
-                        <tr>
-                            <td class="stabtable__name">
-                                <?= get_sub_field('nev') ?>
-                                <?php if (get_sub_field('egyeb')): ?>
-                                <small><?= get_sub_field('egyeb') ?></small>
-                                <?php endif ?>
-                            </td>
-                            <td><?= get_sub_field('tantargy') ?></td>
-                        </tr>
-                        <?php endwhile; ?>
-                    </tbody>
-                </table>
-                <?php endif; ?>
-                <?php if ( have_rows('munkatarsak') ): ?>
-                <h2 class="stabtabletitle">További munkatársak</h2>
-                <table class="stabtable hover unstriped">
-                    <thead>
-                        <tr>
-                            <th>Név</th>
-                            <th>Beosztás</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php while( have_rows('munkatarsak') ): the_row(); ?>
-                        <tr>
-                            <td class="stabtable__name">
-                                <?= get_sub_field('nev') ?>
-                            </td>
-                            <td><?= get_sub_field('beosztas') ?></td>
-                        </tr>
-                        <?php endwhile; ?>
-                    </tbody>
-                </table>
-                <?php endif; ?>
+                <div class="post__content bodycopy">
+                    <?php the_content(); ?>
+                    <?php if ( have_rows('tanarok') ): ?>
+                    <h2 class="stabtabletitle">Tanárok</h2>
+                    <table class="stabtable hover unstriped">
+                        <thead>
+                            <tr>
+                                <th>Név</th>
+                                <th>Tantárgy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php while( have_rows('tanarok') ): the_row(); ?>
+                            <tr>
+                                <td class="stabtable__name">
+                                    <?= get_sub_field('nev') ?>
+                                    <?php if (get_sub_field('egyeb')): ?>
+                                    <small><?= get_sub_field('egyeb') ?></small>
+                                    <?php endif ?>
+                                </td>
+                                <td><?= get_sub_field('tantargy') ?></td>
+                            </tr>
+                            <?php endwhile; ?>
+                        </tbody>
+                    </table>
+                    <?php endif; ?>
+                    <?php if ( have_rows('munkatarsak') ): ?>
+                    <h2 class="stabtabletitle">További munkatársak</h2>
+                    <table class="stabtable hover unstriped">
+                        <thead>
+                            <tr>
+                                <th>Név</th>
+                                <th>Beosztás</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php while( have_rows('munkatarsak') ): the_row(); ?>
+                            <tr>
+                                <td class="stabtable__name">
+                                    <?= get_sub_field('nev') ?>
+                                </td>
+                                <td><?= get_sub_field('beosztas') ?></td>
+                            </tr>
+                            <?php endwhile; ?>
+                        </tbody>
+                    </table>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
         <div class="large-4 cell kepzes__navcell" data-sticky-container>

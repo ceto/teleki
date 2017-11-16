@@ -16,6 +16,7 @@
                             <?php get_template_part('templates/post-meta'); ?>
                         </div>
                         <div class="posthead__lead lead"><?php the_excerpt(); ?></div>
+
                     </div>
                 </div>
             </div>
@@ -24,7 +25,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
             <div class="large-9 xxlarge-8 cell">
-                <div class="post__content">
+                <div class="post__content bodycopy">
                     <?php the_content(); ?>
                 </div>
                 <footer class="post__footer ps ps--narrow">

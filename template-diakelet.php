@@ -6,7 +6,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <?php get_template_part( '/templates/breaking'); ?>
 <?php get_template_part('templates/page', 'header'); ?>
-<div class="ps ps--narrow ps--xlight ps--bordered">
+<div class="ps ps--xlight ps--bordered">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-12 cell">
@@ -54,12 +54,12 @@
         </div>
     </div>
 </div>
-<div class="ps ps--narrow">
+<div class="ps">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="large-12 cell">
                 <header class="pagehead">
-                    <h1 class="pagehead__title"><small>Házon belül</small>Iskolai események, beszámolók</h1>
+                    <h2 class="pagehead__title"><small>Házon belül</small>Iskolai események, beszámolók</h2>
                 </header>
                 <br><br>
                 <?php

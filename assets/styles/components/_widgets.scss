@@ -8,11 +8,17 @@
         font-family: $header-font-family;
         color:$primary-color;
     }
-
+    .kepzes__nav & {
+        font-family: $header-font-family;
+        color:$alert-color;
+        //font-size: 1rem;
+        //text-transform: uppercase;
+    }
 }
 
 .widget__readmore {
     //font-size: .75em;
+    color:$alert-color;
 }
 .widget__body {
     font-size: .875rem;

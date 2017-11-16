@@ -3,7 +3,7 @@
     <header class="posthead ps">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="large-9 xxlarge-8 cell">
+                <div class="large-9 cell">
                     <div class="posthead__content">
                         <h1 class="posthead__title">
                         <?php if (is_single()):  ?>
@@ -18,13 +18,13 @@
                         <div class="posthead__lead lead"><?php the_excerpt(); ?></div>
                     </div>
                     <?php if (get_the_content()!=='') : ?>
-                        <div class="post__content">
+                        <div class="post__content bodycopy">
                             <?php the_content(); ?>
                         </div>
                     <?php endif; ?>
                 </div>
-                <div class="large-3 xxlarge-4 cell">
-                    <?php //get_template_part('templates/recommend') ?>
+                <div class="large-3 cell">
+                    <?php get_template_part('templates/recommend') ?>
                 </div>
             </div>
         </div>

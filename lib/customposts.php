@@ -38,7 +38,7 @@ function teleki_custom_post_types() {
     'label'                 => __( 'Képzés', 'teleki' ),
     'description'           => __( 'Képzés leírása', 'teleki' ),
     'labels'                => $labels,
-    'supports'              => array('title', 'editor', 'page-attributes', 'excerpt'),
+    'supports'              => array('title', 'editor', 'thumbnail', 'page-attributes', 'excerpt'),
     //'taxonomies'            => array('walktag', 'topic'),
     'rewrite'               => array('slug' => __('kepzes','teleki')),
     'hierarchical'          => false,

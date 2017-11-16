@@ -30,7 +30,7 @@
             <div class="large-8 cell">
                 <div class="ps ps--narrow">
                     <div class="lead"><?php the_excerpt(); ?></div>
-                    <div class="kepzes__content">
+                    <div class="kepzes__content bodycopy">
                         <?php the_content(); ?>
                     </div>
                     <footer class="post__footer">
@@ -76,9 +76,9 @@
                             <?php setup_postdata( $post ); ?>
                             <li <?= ($actid==get_the_id()?'class="is-active"':''); ?>><a href="<?php the_permalink();  ?>"><?php the_title(); ?></a></li>
                             <?php endwhile; ?>
-                            <li><a href="<?php the_permalink(6); ?> ">Mutasd mindet</a></li>
                             <?php wp_reset_postdata(); ?>
                         </ul>
+                        <a class="readmore widget__readmore" href="<?php the_permalink(6); ?> ">Mutasd mindet</a>
                     </nav>
                 </div>
             </div>

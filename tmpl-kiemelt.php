@@ -35,7 +35,7 @@
             <div class="large-8 cell">
                 <div class="ps ps--narrow">
                     <div class="lead"><?php the_excerpt(); ?></div>
-                    <div class="post__content">
+                    <div class="post__content bodycopy">
                         <?php the_content(); ?>
                     </div>
                     <footer class="post__footer">
@@ -66,7 +66,7 @@
             <div class="large-4 cell kepzes__navcell" data-sticky-container>
                 <div class="ps ps--narrow sticky" data-sticky data-sticky-on="large" data-top-anchor="sthelper:top" data-btm-anchor="sthelper:bottom" data-options="marginTop:0;">
                      <?php get_template_part( 'templates/recommend' ) ?>
-                     <nav class="kepzes_nav">
+                     <nav class="kepzes__nav">
                         <h3 class="widget__title">Még többet a Telekiről</h3>
                         <?php
                             if (has_nav_menu('tertiary_navigation')) :

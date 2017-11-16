@@ -189,18 +189,21 @@
 
 
 .menu--side {
-    font-family: $header-font-family;
+    //font-family: $header-font-family;
     font-weight: $global-weight-bold;
-    //text-transform: uppercase;
+    margin-bottom: .75rem;
+    font-size: 1.125rem;
+    // text-transform: uppercase;
     > li {
         &:not(:last-child) {
-            margin-bottom: .125rem;
+            margin-bottom: .125em;
         }
     }
 
     a {
         position: relative;
-        font-size: 1rem;
+
+
         //text-transform: uppercase;
         padding: .5em 0;
         line-height: $header-lineheight;
@@ -212,9 +215,11 @@
             // }
         }
         &:before {
+            display: block;
+            float:left;
             //font-weight: $global-weight-normal;
             //content:'[] ';
-            font-size: .875em;
+            //font-size: .875em;
         }
     }
 
@@ -223,8 +228,14 @@
             background-color: transparent;
             color: inherit;
             &:before {
-                color:$primary-color;
-                content: '[×] ';
+                color:$alert-color;
+                content: '';
+                width: .75em;
+                height:.75em;
+                border-radius: .375em;
+                background-color: currentColor;
+                margin-right: .75em;
+                margin-top: .2em;
             }
         }
     }

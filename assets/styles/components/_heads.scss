@@ -11,10 +11,16 @@
 
 
 .pagehead__title {
+    position: relative;
     margin:0;
+    padding-left: .875em;
+    font-size: rem-calc(24);
+
+
     //color:$primary-color;
+    font-family: $body-font-family;
     small {
-        //font-family: $body-font-family;
+        font-family: $header-font-family;
         display: block;
         line-height: $header-lineheight;
         color:$primary-color;
@@ -24,7 +30,30 @@
             font-size: .5em;
         }
     }
+    &:before {
+        position: absolute;
+        content: '';
+        width:.875em;
+        display: block;
+        top:.1em;
+        left:0;
+        bottom:.1em;
+        border-left:.25em dotted $alert-color;
+
+    }
+
+
+    @include breakpoint(medium) {
+        font-size: rem-calc(34);
+    }
+    @include breakpoint(xxlarge) {
+        font-size: rem-calc(36);
+    }
 }
+.pagehead__lead {
+    margin-top:1rem;
+}
+
 .kepzeshead {
     position: relative;
     //border-top:1px solid $xlight-gray;

@@ -1,7 +1,7 @@
 <div class="kepzescard">
     <figure class="kepzescard__ill">
         <a href="<?php the_permalink(); ?>">
-            <img src="http://placehold.it/480x480" alt="">
+            <?php the_post_thumbnail() ?>
         </a>
     </figure>
     <div class="kepzescard__body">
