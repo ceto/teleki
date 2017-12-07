@@ -25,8 +25,6 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
             <div class="cell">
-                <iframe src="https://calendar.google.com/calendar/embed?src=telekicalendar%40gmail.com&ctz=Europe%2FBudapest" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
                 <iframe class="gcal" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=hu&amp;bgcolor=%23FCFCFC&amp;src=telekicalendar%40gmail.com&amp;color=%23125A12&amp;ctz=Europe%2FBudapest" style="border-width:0" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
