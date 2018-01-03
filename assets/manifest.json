@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://teleki.dev"
+    "devUrl": "http://teleki.localhost"
   }
 }

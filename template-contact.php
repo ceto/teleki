@@ -54,7 +54,16 @@
     </div>
 </div>
 
-<div class="mapcanvas" id="mapcanvas"></div>
+<div class="grid-container full">
+    <div class="grid-x">
+        <div class="medium-7 xlarge-8 axxlarge-9 cell mapcanvascell medium-order-2">
+            <div class="mapcanvas" id="mapcanvas"></div>
+        </div>
+        <div class="medium-5 xlarge-4 axxlarge-3 ashow-for-tablet cell medium-order-1">
+            <img class="mapphoto" src="http://placehold.it/800x800" alt="">
+        </div>
+    </div>
+</div>
 <!-- Google MAps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT99lOn79TnwKX53VjwYSfmFvz97OYpwA"></script>
 <script>
