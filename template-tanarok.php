@@ -15,7 +15,12 @@
                     <div class="cell">
                         <div class="membercard">
                             <figure class="membercard__fig">
-                                <img src="//placehold.it/480x480/?text=portre" alt="<?= get_sub_field('nev') ?>">
+                                <?php if ( get_sub_field('foto') ) :?>
+                                    <?php $bossfoto =  get_sub_field('foto'); ?>
+                                    <?= wp_get_attachment_image( $bossfoto[ID], 'medium' ) ?>
+                                <?php else: ?>
+                                    <img src="//placehold.it/480x480/?text=portre" alt="<?= get_sub_field('nev') ?>">
+                                <?php endif; ?>
                             </figure>
                             <h3 class="membercard__title"><?= get_sub_field('nev') ?></h3>
                             <div class="membercard__titulus"><?= get_sub_field('beosztas') ?></div>
