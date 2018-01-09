@@ -9,6 +9,5 @@
     <link rel="manifest" href="<?= get_stylesheet_directory_uri(); ?>/lib/manifest.json">
     <link rel="mask-icon" href="<?= get_stylesheet_directory_uri(); ?>/dist/images/favicons/safari-pinned-tab.svg" color="#116d6a">
     <link rel="shortcut icon" href="<?= get_stylesheet_directory_uri(); ?>/dist/images/favicons/favicon.ico">
-    <meta name="msapplication-config" content="<?= get_stylesheet_directory_uri(); ?>/lib/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
