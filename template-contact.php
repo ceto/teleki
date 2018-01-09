@@ -60,7 +60,7 @@
             <div class="mapcanvas" id="mapcanvas"></div>
         </div>
         <div class="medium-5 xlarge-4 axxlarge-3 ashow-for-tablet cell medium-order-1">
-            <img class="mapphoto" src="http://placehold.it/800x800" alt="">
+            <img class="mapphoto" src="<?= get_stylesheet_directory_uri(); ?>/dist/images/teleki-blanka-szobor.jpg" alt="">
         </div>
     </div>
 </div>
