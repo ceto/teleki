@@ -1,16 +1,22 @@
 .front__thecontent {
+    padding-top: 3.5vw;
+    padding-bottom: 8rem;
+    background-image: url(../images/jump-crop.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: rem-calc(480) auto;
+    background-color: #fff;
 
-
-     > .grid-container {
-        padding-top: 3.5vw;
-        padding-bottom: 30vw;
-
-        background-image: url(../images/nyitolap.jpg);
-        background-repeat: no-repeat;
-        background-position: center bottom -5vw;
-        background-size: 250% auto;
-
+    @include breakpoint(tablet) {
+        padding-bottom: 15rem;
+        background-size: rem-calc(768) auto;
     }
+    @include breakpoint(large) {
+        padding-bottom: 27rem;
+        background-size: $global-width auto;
+    }
+
+
 
     .widget--blogcage {
         background-color: $xxlight-gray;
