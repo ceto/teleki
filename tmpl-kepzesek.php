@@ -35,9 +35,6 @@
         <div class="large-8 cell">
             <div class="ps ps--narrow">
                 <div class="lead"><?php the_excerpt(); ?></div>
-                <div class="post__content bodycopy">
-                    <?php the_content(); ?>
-                </div>
                 <?php
                     $the_kepzesek = new WP_Query( array(
                     'posts_per_page'      => -1,
@@ -57,25 +54,11 @@
                         <?php wp_reset_postdata(); ?>
                     </div>
                 </div>
+                <div class="post__content bodycopy">
+                    <?php the_content(); ?>
+                </div>
                 <footer class="post__footer">
-                    <?php
-                    $the_cageposts = new WP_Query( array(
-                    'posts_per_page'      => 4,
-                    'post__not_in'            => array(get_the_id()),
-                    'ignore_sticky_posts' => 1,
-                    )); ?>
-                    <section class="widget">
-                        <h3 class="widget__title">Kapcsolódó tartalmak és aktualitások</h3>
-                        <div class="widget__body">
-                            <ul class="blogcage">
-                                <?php while ( $the_cageposts->have_posts() ) : $the_cageposts->the_post(); ?>
-                                <?php setup_postdata( $post ); ?>
-                                <?php get_template_part('templates/blogcage' ); ?>
-                                <?php endwhile; ?>
-                            </ul>
-                            <?php wp_reset_query(); ?>
-                        </div>
-                    </section>
+                    <?php get_template_part('/templates/postscage' ); ?>
                     <?php get_template_part('/templates/dlcage' ); ?>
                 </footer>
             </div>
