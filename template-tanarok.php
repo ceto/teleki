@@ -49,12 +49,12 @@
                     <?php if ( have_rows('tanarok') ): ?>
                     <h2 class="stabtabletitle">Tanárok</h2>
                     <table class="stabtable hover unstriped">
-                        <thead>
+<!--                         <thead>
                             <tr>
                                 <th>Név</th>
                                 <th>Tantárgy</th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody>
                             <?php while( have_rows('tanarok') ): the_row(); ?>
                             <tr>
@@ -73,12 +73,12 @@
                     <?php if ( have_rows('munkatarsak') ): ?>
                     <h2 class="stabtabletitle">További munkatársak</h2>
                     <table class="stabtable hover unstriped">
-                        <thead>
+<!--                         <thead>
                             <tr>
                                 <th>Név</th>
                                 <th>Beosztás</th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody>
                             <?php while( have_rows('munkatarsak') ): the_row(); ?>
                             <tr>
