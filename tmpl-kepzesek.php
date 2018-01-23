@@ -35,6 +35,9 @@
         <div class="large-8 cell">
             <div class="ps ps--narrow">
                 <div class="lead"><?php the_excerpt(); ?></div>
+                <div class="post__content bodycopy">
+                    <?php the_content(); ?>
+                </div>
                 <?php
                     $the_kepzesek = new WP_Query( array(
                     'posts_per_page'      => -1,
@@ -53,9 +56,6 @@
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
                     </div>
-                </div>
-                <div class="post__content bodycopy">
-                    <?php the_content(); ?>
                 </div>
                 <footer class="post__footer">
                     <?php get_template_part('/templates/postscage' ); ?>
