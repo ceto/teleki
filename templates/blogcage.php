@@ -1,8 +1,8 @@
 <li class="blogcage__item">
     <?php if ( get_post_type()=='kepzes'  ) : ?>
-        <span class="blogcage__updated blogcage__updated--text"><? _e('Képzés','teleki') ?></span>
+        <span class="blogcage__updated blogcage__updated--text"><?= __('Képzés','teleki') ?></span>
     <?php elseif ( get_post_type()=='page'  ) : ?>
-        <span class="blogcage__updated blogcage__updated--text"><? _e('Info','teleki') ?></span>
+        <span class="blogcage__updated blogcage__updated--text"><?= __('Info','teleki') ?></span>
     <?php else: ?>
         <time class="blogcage__updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date('m/d.'); ?></time>
     <?php endif; ?>
