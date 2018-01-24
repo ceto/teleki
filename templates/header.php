@@ -2,7 +2,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell">
-                <a href="#" class="toprow__action">E-NAPLÓ</a>
+                <a href="https://bgaszc-teleki.e-kreta.hu" target="_blank" class="toprow__action">E-NAPLÓ</a>
                 <nav class="toprow__nav">
                     <?php
                     if (has_nav_menu('secondary_navigation')) :

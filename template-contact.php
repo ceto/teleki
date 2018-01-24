@@ -38,7 +38,7 @@
                             <a href="mailto:titkarsag@teleki-bp.sulinet.hu">titkarsag@teleki-bp.sulinet.hu</a>
                         </p>
                         <p><strong>És még:</strong><br />
-                            <a href="https://www.facebook.com/bikramjogakozpont" target="_blank" rel="noopener">Facebook</a>, <a href="https://www.instagram.com/bikramyogabudapest/" target="_blank" rel="noopener">Instagram</a>
+                            <a href="https://www.facebook.com/TelekiBlankaKozgazdasagiSzki/" target="_blank" rel="noopener">Facebook</a>
                         </p>
                     </div>
                     <div class="cell medium-6 large-6">
