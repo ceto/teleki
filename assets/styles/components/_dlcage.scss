@@ -14,6 +14,20 @@
         margin-bottom: .875em;
     }
 }
+
+.dlcage__item__label {
+    //display:none;
+    //margin-right: -.25em;
+    line-height: 1;
+    display: inline-block;
+    margin-right: .333em;
+    //color:$dark-gray;
+    svg {
+        font-size: .875em;
+        transform: translateY(.125em);
+    }
+}
+
 .dlcage__item__fileinfo {
     font-size: .875em;
     font-weight: $global-weight-bold;
@@ -33,11 +47,21 @@
 }
 .dlcage__item__title {
     font-weight: $global-weight-bold;
+    a {
+        color:inherit;
+        &:hover, &:focus {
+            color:$alert-color;
+        }
+    }
 }
 .dlcage__item__extension {
     text-transform: uppercase;
 }
 
 .dlcage__item__action {
+    font-weight: $global-weight-bold;
     font-size: .875em;
+    &:hover, &:focus {
+            color:$alert-color;
+    }
 }

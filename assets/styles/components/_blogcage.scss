@@ -26,7 +26,7 @@
 .blogcage__title {
     font-size: 1em;
     float:left;
-    width:calc(100% - 2.75rem);
+    width:calc(100% - 2.875rem);
     margin:0;
 
     a {
@@ -43,10 +43,17 @@
     line-height: $header-lineheight;
     float:left;
     display: block;
-    width:2.75rem;
+    width:2.875rem;
     font-size: .75em;
     font-family: $header-font-family;
     color:$alert-color;
     font-weight: $global-weight-bold;
+    //text-transform: capitalize;
 
+}
+
+.blogcage__updated--text {
+    font-size: .666em;
+    padding-top: .5333em;
+        text-transform: uppercase;
 }

@@ -2,7 +2,7 @@
   <header class="postcard__header">
     <h2 class="postcard__title">
         <?php if(is_sticky()) : ?>
-          <span class="postcard__label postcard__label--featured">Fontos:</span>
+          <span class="postcard__label postcard__label--featured"><svg class="icon"><use xlink:href="#icon-announcement"></use></svg></span>
         <?php endif; ?>
         <?php if( get_post_format()=='gallery'  ) : ?>
           <span class="postcard__label postcard__label--gallery">

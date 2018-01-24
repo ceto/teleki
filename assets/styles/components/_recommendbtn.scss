@@ -1,3 +1,6 @@
+.recommendwrap {
+    position: relative;
+}
 .recommendbtn {
     font-weight: $global-weight-bold;
 
@@ -20,8 +23,25 @@
 
 
 .recommend-dropdown {
-    width:300px;
+    width:100%;
+    //max-width:320px;
     //box-shadow: 0 0 0 100vw rgba(#000,.5);
+    border:3px solid scale-color($alert-color, $lightness: -15%);
+    //border-top: none;
+    padding: 10% 7% 7%;
+    text-align: center;
+    .icon {
+        font-size: 2rem;
+        color:$alert-color;
+        margin-bottom: .5em;
+    }
+    h3 {
+        font-size: 1.333rem;
+    }
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .fb-like {

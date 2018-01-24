@@ -12,11 +12,11 @@
 
     cite {
         display: block;
-        font-family: $body-font-family;
-        font-weight: $global-weight-bold;
+        //font-family: $body-font-family;
+        //font-weight: $global-weight-bold;
         //color:$warning-color;
         color:inherit;
-        font-size: .666em;
+        font-size: .75em;
         &:before {
             display: none;
         }
@@ -24,12 +24,12 @@
 }
 
 .testimonial, .testimonial p {
-    font-size: 1.125rem;
+    //font-size: 1rem;
     color:inherit;
-    font-style: normal;
+    //font-style: normal;
     text-shadow: 0 0 3px rgba($primary-color,.5);
     @include breakpoint('xlarge') {
-        font-size: 1.333rem;
+        //font-size: 1.333rem;
     }
 }
 

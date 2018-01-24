@@ -22,7 +22,7 @@
                     <div class="cell medium-6 large-3">
                         <h4>Cím</h4>
                         <p><strong>BGSZC Teleki Blanka Közgazdasági Szakgimnáziuma</strong><br />
-                            H-1023 Budapest,<br />
+                            H-1095 Budapest,<br />
                             Mester utca 23.<br />
                         </p>
                         <p><strong>Kapunyitás:</strong><br />

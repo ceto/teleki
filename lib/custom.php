@@ -25,6 +25,7 @@
 
 
 //exclude sticky posts from main query
+/*
 add_action( 'pre_get_posts', 'teleki_exclude_sticky_posts' );
 function teleki_exclude_sticky_posts( $query ) {
     if( $query->is_main_query() && $query->is_home() ) {
@@ -33,7 +34,7 @@ function teleki_exclude_sticky_posts( $query ) {
         //$query->set( 'ignore_sticky_posts', 0 );
     }
 }
-
+*/
 
 function teleki_foundation_pagination() {
 
