@@ -36,6 +36,7 @@
     display: inline-block;
     //margin-right: -.333em;
     line-height: 1;
+    color:$primary-color;
     svg {
         font-size: 1.125em;
         transform: translateY(.125em);
@@ -46,7 +47,7 @@
     color:$alert-color;
 }
 .postcard__label--gallery {
-    color:$primary-color;
+    //color:$primary-color;
 }
 .postcard__meta {
     font-size: .875rem;
@@ -62,5 +63,8 @@
     margin:.5em 0 .5em 0;
     p {
         margin:0;
+    }
+    .excerptmore {
+        display: none;
     }
 }

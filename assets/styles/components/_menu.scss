@@ -165,6 +165,7 @@
             content:'•';
             display: inline-block;
             margin:0 .333em;
+            transform: translateY(-.1125em);
         }
     }
     a {
@@ -239,4 +240,19 @@
             }
         }
     }
+}
+
+.menu-item--icon {
+    > a {
+        font-size: 1em;
+        padding:0;
+        .menu--student & {
+            transform: translateY(.215em);
+        }
+        .menu--mobilestudent & {
+            margin:0;
+            transform: translateY(.125em)
+        }
+    }
+
 }

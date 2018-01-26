@@ -2,6 +2,15 @@
     @include clearfix();
     display: block;
     font-size: .75rem;
+    &:hover, &focus {
+        .brand__descr {
+
+        }
+        .brand__descr {
+            //color:$alert-color;
+        }
+    }
+
     @include breakpoint('xlarge') {
         font-size: 1rem;
     }

@@ -15,7 +15,10 @@
                         <div class="posthead__meta">
                             <?php get_template_part('templates/post-meta'); ?>
                         </div>
-                        <div class="posthead__lead lead"><?php the_excerpt(); ?></div>
+                        <?php if (has_excerpt()) : ?>
+                            <div class="posthead__lead lead"><?php the_excerpt(); ?></div>
+                        <?php endif; ?>
+
 
                     </div>
                 </div>

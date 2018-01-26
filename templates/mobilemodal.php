@@ -15,7 +15,7 @@
     <nav class="mobilemodal__studentnav">
             <?php
                 if (has_nav_menu('secondary_navigation')) :
-                wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu menu--mobilestudent align-center', 'items_wrap' => '<ul class="%2$s">%3$s</ul>']);
+                wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu_class' => 'menu menu--mobilestudent align-center', 'items_wrap' => '<ul class="%2$s">%3$s<li class="menu-item menu-facebook menu-item--icon"><a href="https://www.facebook.com/TelekiBlankaKozgazdasagiSzki/" target="_blank"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg></a></li></ul>']);
                 endif;
             ?>
         </nav>

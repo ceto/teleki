@@ -12,6 +12,10 @@
             <span class="blogcage__label blogcage__label--gallery">
                 <svg class="icon"><use xlink:href="#icon-photo"></use></svg>
             </span>
+        <?php elseif( get_post_format()=='video'  ) : ?>
+            <span class="blogcage__label blogcage__label--video">
+                <svg class="icon"><use xlink:href="#icon-film"></use></svg>
+            </span>
         <?php endif; ?>
             <?php the_title(); ?>
         </a>
