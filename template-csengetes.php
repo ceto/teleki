@@ -19,7 +19,7 @@
                 <br><br>
                 <div class="grid-x grid-margin-x">
                     <div class="cell tablet-6 large-6">
-                        <h3 class="stabtabletitle">Normál csengetés</h3>
+                        <h3>Normál csengetés</h3>
                         <table>
                             <thead>
                                 <tr>
@@ -29,39 +29,39 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="table__headcell">1. óra</td>
+                                    <td>1. óra</td>
                                     <td>08:00 - 08:45</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">2. óra</td>
+                                    <td>2. óra</td>
                                     <td>08:55 - 09:40</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">3. óra</td>
+                                    <td>3. óra</td>
                                     <td>09:50 - 10:35</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">4. óra</td>
+                                    <td>4. óra</td>
                                     <td>10:50 - 11:35</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">5. óra</td>
+                                    <td>5. óra</td>
                                     <td>11:45 - 12:30</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">6. óra</td>
+                                    <td>6. óra</td>
                                     <td>12:50 - 13:35</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">7. óra</td>
+                                    <td>7. óra</td>
                                     <td>13:45 - 14:30</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="cell tablet-6 large-6">
-                        <h3 class="stabtabletitle">Rövidített órák</h3>
-                        <table>
+                        <h3>Rövidített órák</h3>
+                        <table class="">
                             <thead>
                                 <tr>
                                     <th>Óra</th>
@@ -70,32 +70,32 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="table__headcell">1. óra</td>
-                                    <td>08:00 - 08:45</td>
+                                    <td>1. óra</td>
+                                    <td>08:00 - 08:30</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">2. óra</td>
-                                    <td>08:55 - 09:40</td>
+                                    <td>2. óra</td>
+                                    <td>08:40 - 09:10</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">3. óra</td>
-                                    <td>09:50 - 10:35</td>
+                                    <td>3. óra</td>
+                                    <td>09:20 - 09:50</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">4. óra</td>
-                                    <td>10:50 - 11:35</td>
+                                    <td>4. óra</td>
+                                    <td>10:00 - 10:30</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">5. óra</td>
-                                    <td>11:45 - 12:30</td>
+                                    <td>5. óra</td>
+                                    <td>10:40 - 11:10</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">6. óra</td>
-                                    <td>12:50 - 13:35</td>
+                                    <td>6. óra</td>
+                                    <td>11:20 - 11:50</td>
                                 </tr>
                                 <tr>
-                                    <td class="table__headcell">7. óra</td>
-                                    <td>13:45 - 14:30</td>
+                                    <td>7. óra</td>
+                                    <td>12:00 - 12:30</td>
                                 </tr>
                             </tbody>
                         </table>
