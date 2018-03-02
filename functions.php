@@ -18,7 +18,8 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
   'lib/customposts.php', // Custom post Types
-  'lib/custom.php'     // Custom code by ceto
+  'lib/custom.php',     // Custom code by ceto
+  //'lib/ajaxnav.php'     // Custom code by ceto
 ];
 
 foreach ($sage_includes as $file) {

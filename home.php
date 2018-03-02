@@ -49,7 +49,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">
             <div class="large-9 xxlarge-8 cell">
-                <div class="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-2">
+                <div class="postgrid grid-x grid-margin-x grid-margin-y medium-up-2 large-up-2">
                     <?php while (have_posts()) : the_post(); ?>
                     <div class="cell">
                         <?php get_template_part('templates/postcard'); ?>

@@ -111,6 +111,7 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
+
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
@@ -118,5 +119,18 @@ function assets() {
   }
 
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+
+  // if ( is_archive() || is_home() ) {
+  //   global $wp_query;
+  //   wp_localize_script( 'sage/js', 'teleki_loadmore_params', array(
+  //           'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+  //           'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
+  //           'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+  //           'max_page' => $wp_query->max_num_pages
+  //   ) );
+  // }
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+
+
