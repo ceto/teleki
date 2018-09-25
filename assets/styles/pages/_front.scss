@@ -1,7 +1,7 @@
 .front__thecontent {
     padding-top: 3.5vw;
     padding-bottom: 8rem;
-    background-image: url(../images/jumh-crop.jpg);
+    background-image: url(../images/jump-crop.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: rem-calc(480) auto;
@@ -33,12 +33,17 @@
 .front__bottom {
 }
 
-// .widget--frontpage {
-//     &.widget_media_image {
-//         margin-top:8rem;
-//         text-align: center;
-//         img {
-//             max-width: 80px !important;
-//         }
-//     }
-// }
+.widget--frontpage {
+    &.widget_media_image {
+        padding: 1.5rem 8% 1.5rem;
+        background-color: $xxlight-gray;
+        border:1px solid $xlight-gray;
+        margin-bottom:1rem;
+        
+        text-align: center;
+        img {
+            border:1px solid $xlight-gray;
+            max-width: 284px !important;
+        }
+    }
+}
