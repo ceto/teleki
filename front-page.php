@@ -47,6 +47,7 @@
                             <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="readmore">Még több hír a blogon</a>
                         </div>
                     </section>
+                    <?php dynamic_sidebar('sidebar-frontpage'); ?>
                 </div>
             </div>
         </div>

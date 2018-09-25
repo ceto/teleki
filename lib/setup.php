@@ -87,6 +87,14 @@ function widgets_init() {
     'before_title'  => '<h3 class="widget__title">',
     'after_title'   => '</h3><div class="widget__body">'
   ]);
+  register_sidebar([
+    'name'          => __('Front Page', 'sage'),
+    'id'            => 'sidebar-frontpage',
+    'before_widget' => '<section class="widget widget--frontpage %1$s %2$s">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3 class="widget__title">',
+    'after_title'   => '</h3><div class="widget__body">'
+  ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
