@@ -32,10 +32,10 @@
                     <div class="cell medium-6 large-3">
                         <h4>Elérhetőség</h4>
                         <p><strong>Telefon:</strong><br />
-                            <a href="tel:+3613280774">+36 (1) 215 9254</a>
+                            <a href="tel:+3612159254">+36 (1) 215 9254</a>
                         </p>
                         <p><strong>E-mail:</strong><br />
-                            <a href="mailto:titkarsag@teleki-bp.sulinet.hu">titkarsag@teleki-bp.sulinet.hu</a>
+                            <a href="mailto:titkarsag@telekiblankabp.hu">titkarsag@telekiblankabp.hu</a>
                         </p>
                         <p><strong>És még:</strong><br />
                             <a href="https://www.facebook.com/TelekiBlankaKozgazdasagiSzki/" target="_blank" rel="noopener">Facebook</a>
